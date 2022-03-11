@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>Correction d'une page web | Certification Développer des sites web accessibles — Access42</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <!--[if (IEMobile)]>
+    <meta http-equiv="cleartype" content="on"/><![endif]-->
+    <meta name="pinterest" content="nopin"/>
+    <meta name="robots" content="noindex,follow"/>
+    <!-- AccessStyle -->
+    <link rel="stylesheet" type="text/css" media="screen" href="accessconfig/css/accessconfig.min.css"/>
+    <link rel="stylesheet" href="css/styles.css" type="text/css" media="screen"/>
+    <!-- Multilang -->
+    <link rel="alternate" hreflang="fr"
+          href="https://example.com/"/>
+    <link rel="alternate" hreflang="es"
+          href="https://example.com/es"/>
+    <link rel="alternate" hreflang="sv"
+          href="https://example.com/sv"/>
+    <link rel="alternate" hreflang="x-default"
+          href="https://www.example.com/"/>
+</head>
+
+<body class="a42-as">
+<div id="screen" class="a42-wrapper">
+
+    <!--Menu de configuration d'accessibilité-->
+    <div id="accessconfig" class="a42-btn" data-accessconfig-buttonname="Accessibilité"
+         data-accessconfig-params='{ "Prefix" : "a42-ac", "ContainerClass" : "","ModalCloseButton" : "","ModalTitle" : "","FormFieldset" : "","FormFieldsetLegend" : "","FormRadio" : ""}'></div>
+
+    <nav tabindex="-1" role="navigation" class="sr-only"><a id="skiplink" href="#main">Accès rapide au contenu de la page</a></nav>
+    <div class="a42-main-header a42-bgcolor-c4">
+        <div class="a42-container">
+            <div class="a42-main-tools a42-layout-alpha">
+                <div class="a42-main-tools_alpha">
+                    <nav id="navigation" role="navigation" aria-label="Menu de changement de langue du site"
+                         class="a42-main-tools_alpha">
+                        <ul class="a42-list-reset a42-language">
+                            <li class="current" aria-label="Version actuellement sélectionnée">
+                                <a href="/" lang="fr">
+                                    <span class="sr-only">Version française</span>
+                                    <img aria-hidden="true" src="img/france.png" alt="Version française"/>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/es" lang="es">
+                                    <span class="sr-only" lang="es">Versión en español</span>
+                                    <img aria-hidden="true" src="img/espagne.png" alt="Versión en español"/>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/sv" lang="sv">
+                                    <span class="sr-only" lang="sv">Spansk version</span>
+                                    <img aria-hidden="true" src="img/sweden.png" alt="Spansk version"/>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+            <div class="a42-main-intro">
+                <header role="banner">
+                    <h1 class="a42-title-maxi">Le stockage d'information</h1>
+                    <div class="a42-main-intro_desc a42-text-great">
+                        <p>Le stockage d'information sur un support électronique ou électromagnétique.</p>
+                    </div>
+                </header>
+                <div class="a42-toc-container">
+                    <button data-visible="false" class="menu-btn" aria-label="Accéder au menu du site"
+                            aria-controls="main-nav">
+                        <svg height="32px" aria-hidden="true" id="menu-btn" style="enable-background:new 0 0 32 32;"
+                             version="1.1" viewBox="0 0 32 32" width="32px" xml:space="preserve"
+                             xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2  s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2  S29.104,22,28,22z"/></svg>
+                        Menu
+                    </button>
+                    <div class="a42-toggle-content is-closed" id="main-nav" aria-hidden="true">
+                        <nav id="menu" class="a42-toc" role="navigation" aria-label="Menu de navigation du site">
+                            <ul>
+                                <li><a href="/" class="a42-home-link">
+                                    <span class="sr-only">Retourner à l'accueil</span>
+                                    <svg aria-hidden="true" class="svg-icon" viewbox="0 0 24 24">
+                                        <path d="M10,20V14H14V20H19V12H22L12,3L2,12H5V20H10Z"></path>
+                                    </svg>
+                                </a></li>
+                                <li><a href="ged.html">La gestion électronique des documents</a></li>
+                                <li><a href="confidentialite-donnees.html">La confidentialité des données</a></li>
+                                <li><a href="serveur-reseau.html">Serveur de stockage en réseau</a></li>
+                                <li><a href="stockage-optique-3d.html">Le stockage optique 3D</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main id="main" class="a42-main-container" tabindex="0">
+        <div class="a42-container a42-clear">
+            <div id="a42-container a42-clear" class="a42-container-bis a42-clear">
+
+                <section class="a42-page-content">
+
+                    <div class="a42-search a42-bgcolor-c1" role="search">
+                        <form method="POST" id="search">
+                            <label id="label-recherche">Saisir les termes à rechercher sur le site</label>
+                            <input type="text" id="search-submit" autocomplete="off" title="Mots-clés ou contenus à rechercher"
+                                   aria-required="true"
+                                   aria-labelledby="label-recherche"/>
+                            <button id="btn-search" title="Lancer la recherche"
+                                    class="a42-btn a42-btn-alpha a42-btn-alpha--ghost">
+                                <span aria-hidden="true">🔍</span>Rechercher
+                            </button>
+                        </form>
+                    </div>
+                    <article tabindex="1">
+                        <p><b>Le stockage d'information</b> est aujourd'hui assuré par un support d'information
+                            électronique, ou électromagnétique, qui, vu de l'utilisateur, peut être physique (disque
+                            dur, clé USB, etc.) ou virtuel (Internet dénommé le « nuage » (en anglais <span lang="en">cloud</span>
+                            voire en franglais « le cloud »), mais qui en l'état de la technologie est enregistré sur un
+                            support physique (SSD, disque dur, CD/DVD, bande magnétique, etc.). Ainsi, le terme de «
+                            dématérialisation » employé pour désigner le passage d'un support d'information papier à un
+                            support électronique est peu approprié, puisque ce dernier est lui aussi lié à du matériel.
+                        </p>
+
+                        <p>Le choix de la méthode de stockage se fait selon plusieurs critères :</p>
+                        <ul>
+                            <li>la fréquence d'utilisation ;</li>
+                            <li>les besoins capacitaires de l'information (taille) ;</li>
+                            <li>la criticité de l'information (coût, sécurité) ;</li>
+                            <li>la capacité de stockage et la vitesse d’accès à l'information.</li>
+                        </ul>
+
+                        <p>L'évolution des techniques de stockage est rapide, et tend vers plus de capacité, plus de
+                            vitesse, plus de fiabilité, tout en étant moins cher à capacité équivalente. Les types de
+                            média sont variés et changent souvent.
+                        </p>
+                    </article>
+                    <article tabindex="1">
+                        <h2>Classification des technologies de stockage</h2>
+
+                        <p>Les technologies de stockages sont classées par génération :</p>
+
+                        <ol>
+                            <li>Première génération : Les supports physiques, avec la carte et le ruban perforé
+                                (obsolètes depuis la fin des années 90)&nbsp;;
+                            </li>
+                            <li>Deuxième génération : Les supports magnétiques, comme la bande magnétique, sa petite
+                                sœur la cassette, le disque dur, la disquette&nbsp;;
+                            </li>
+                            <li>Troisième génération : Les supports optiques, tels que le disque compact (CD, CD-R ou
+                                CD-RW), le DVD (DVD-Rom ou DVD-RW) ou le Blu-ray&nbsp;;
+                            </li>
+                            <li>Quatrième génération : clé USB, carte SD et Carte microSD et surtout les SSD&nbsp;;</li>
+                            <li>Cinquième génération : Le stockage en ligne, dépendant d'une connexion Internet, le «
+                                <span lang="en">Cloud</span> », la sauvegarde en ligne, le <span
+                                        lang="en">Cold Storage</span> ou encore le stockage dans ce qu'on appelle le
+                                <span lang="en">Vault</span> (coffre-fort).
+                            </li>
+                        </ol>
+
+
+                        <img aria-hidden="true" src="img/header-hard-drive.jpg" alt="Exemple de disque dur"
+                             style="margin-bottom:15px"/>
+                    </article>
+                    <h3 class="a42-title-beta" tabindex="1">Problématiques du stockage</h3>
+
+                    <p>Au cours de son histoire, l'homme n'a cessé de produire de l'information. </p>
+
+                    <p>Du fait de leur constitution physique, tous les supports de stockage ont une durée de vie
+                        limitée, entraînant <b>un risque de perte d'information</b>. Pour s'en affranchir, il faut
+                        constamment les vérifier et recopier les données pour les sauvegarder sur des supports fiables.
+                        Une branche de la théorie de l'information permet de récupérer une altération partielle des
+                        données. Cette technique, dite des codes correcteurs, <b>est notamment utilisée dans les
+                            installations RAID. La redondance de l'information reste ainsi le seul rempart face au
+                            manque de fiabilité des supports.</b></p>
+
+                    <p><strong>Le stockage n'est pas forcément synonyme d'archivage</strong> L’archivage de contenus
+                        électroniques est l’ensemble des actions, outils et méthodes mis en œuvre pour réunir,
+                        identifier, sélectionner, classer, détruire et conserver des contenus électroniques, sur un
+                        support sécurisé, dans le but de les exploiter et de les rendre accessibles dans le temps. <b>Le
+                            contenu archivé est considéré comme figé et ne peut donc être modifié.</b> (afin de servir
+                        de preuve en cas de litige par exemple). La durée de l’archivage est fonction de la valeur du
+                        contenu et porte le plus souvent sur du moyen ou long terme. <b>La conservation est l’ensemble
+                            des moyens mis en œuvre pour stocker, sécuriser, pérenniser, restituer, tracer, transférer
+                            voire détruire, les contenus électroniques archivés.</b></p>
+
+
+                    <h4 class="a42-title-gamma" tabindex="1">La pérennité du stockage</h4>
+
+                    <p>Une conversion dans un format pérenne doit être faite pour les documents qui sont versés dans le
+                        système d’archivage. Cette opération de conversion doit également être faite pour les
+                        informations descriptives et applicatives encapsulées. À cela sont également ajoutées et pris en
+                        compte, toutes les informations qui pourront permettre de tenir un historique sur les documents
+                        archivés, quant aux droits d’accès et/ou de confidentialité.</p>
+                    <p>
+                        En premier lieu, le SAE permettre la pérennité de la valeur des données archivées, en assurant
+                        qu’ils constitueront une preuve recevable en justice, et ce pendant toute la durée de
+                        conservation. La durée de conservation équivaut à celle de leur utilité sur le plan
+                        administratif par exemple (durée pouvant atteindre les cent ans, ou advitam æternam pour ce qui
+                        est des données à valeur patrimoniale ou à conservation permanente).</p>
+
+                    <div class="share-block" tabindex="0">
+                        <button onclick="openDialog('dialog1', this)"
+                                class="a42-btn a42-btn-alpha a42-btn-alpha--warning share-btn">
+                            <svg aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 507.45 507.45"
+                                 style="enable-background:new 0 0 507.45 507.45;" xml:space="preserve"><g><g id="share-alt"><path d="M408,178.5c-20.4,0-38.25,7.65-51,20.4L175.95,94.35c2.55-5.1,2.55-12.75,2.55-17.85C178.5,33.15,145.35,0,102,0S25.5,33.15,25.5,76.5S58.65,153,102,153c20.4,0,38.25-7.65,51-20.4l181.05,104.55c-2.55,5.1-2.55,12.75-2.55,17.85c0,5.1,0,12.75,2.55,17.85L153,379.95c-12.75-12.75-30.6-20.4-51-20.4c-40.8,0-73.95,33.15-73.95,73.95S61.2,507.45,102,507.45s73.95-33.15,73.95-73.95c0-5.1,0-10.2-2.55-17.85L354.45,308.55c12.75,12.75,30.6,20.4,51,20.4c43.35,0,76.5-33.15,76.5-76.5C481.95,209.1,451.35,178.5,408,178.5z"/></g></g></svg>
+                            Partager sur le web
+                        </button>
+                    </div>
+                    <h3 class="a42-title-beta" tabindex="0">Participez à notre grand sondage !</h3>
+
+                    <div id="msg-ok" aria-live="polite"></div>
+
+                    <form action="/" class="a42-form-big" id="form-sondage" novalidate>
+                        <small><span aria-hidden="true">(*) </span>Les champs précédés d'une étoile sont obligatoires</small>
+
+                        <div>
+                            <label id="user-first-name-label" for="user-first-name">Votre prénom</label>
+                            <input type="text" aria-required="false" aria-labelledby="user-first-name-label"
+                                   id="user-first-name" name="user-first-name"/>
+                        </div>
+                        <div>
+                            <label class="label" id="nom-label" for="nom">Votre nom<span aria-hidden="true"> (*)</span></label>
+                            <input type="text" aria-required="true" aria-labelledby="nom-label" id="nom" name="nom"/>
+                        </div>
+                        <div>
+                            <label class="label" id="email-label" for="email">Votre adresse <span lang="en">email</span><span aria-hidden="true"> (*)</span></label>
+                            <input type="email" aria-required="true" aria-labelledby="email-label" id="email"
+                                   name="email"/>
+                        </div>
+
+                        <div>
+                            <label class="label" id="message-label" for="message">Laissez un commentaire</label>
+                            <textarea name="message" id="message" aria-labelledby="message-label" cols="30"
+                                      rows="10"></textarea>
+                        </div>
+
+                        <fieldset class="form-group">
+                            <legend><b>Quelles générations de stockage avez- vous utilisez au cour de votre
+                                vie&nbsp;?</b></legend>
+
+                            <div class="field-item">
+                                <input type="checkbox" name="ever" value="1" id="ever-1">
+                                <label for="ever-1">1re génération (carte et ruban perforés)</label>
+                            </div>
+
+                            <div class="field-item">
+                                <input type="checkbox" name="ever" value="2" id="ever-2">
+                                <label for="ever-2">2e génération (disquettes, cassette, disque dur, ...)</label>
+                            </div>
+
+                            <div class="field-item">
+                                <input type="checkbox" name="ever" value="3" id="ever-3">
+                                <label for="ever-3">3e génération (CD, DVD, Blue-ray, ...)</label>
+                            </div>
+
+                            <div class="field-item">
+                                <input type="checkbox" name="ever" value="4" id="ever-4">
+                                <label for="ever-4">4e génération (clé USB, carte SD, micro SD, SSD, ...)</label>
+                            </div>
+
+                            <div class="field-item">
+                                <input type="checkbox" name="ever" value="5" id="ever-5">
+                                <label for="ever-5">5e génération (<span lang="en">Cloud</span> ou autre solution en
+                                    ligne)</label>
+                            </div>
+
+                        </fieldset>
+
+                        <fieldset class="form-group">
+                            <legend><b>Quelles générations de stockage utilisez-vous au quotidien&nbsp;?</b>
+                            </legend>
+
+                            <div class="field-item">
+                                <input type="checkbox" name="current" value="1" id="current-1">
+                                <label for="current-1">1re génération (carte et ruban perforés)</label>
+                            </div>
+
+                            <div class="field-item">
+                                <input type="checkbox" name="current" value="2" id="current-2">
+                                <label for="current-2">2e génération (disquettes, cassette, disque dur, ...)</label>
+                            </div>
+
+                            <div class="field-item">
+                                <input type="checkbox" name="current" value="3" id="current-3">
+                                <label for="current-3">3e génération (CD, DVD, Blue-ray, ...)</label>
+                            </div>
+
+                            <div class="field-item">
+                                <input type="checkbox" name="current" value="4" id="current-4">
+                                <label for="current-4">4e génération (clé USB, carte SD, micro SD, SSD, ...)</label>
+                            </div>
+
+                            <div class="field-item">
+                                <input type="checkbox" name="current" value="5" id="current-5">
+                                <label for="current-5">5e génération (<span lang="en">Cloud</span> ou autre solution en
+                                    ligne)</label>
+                            </div>
+                        </fieldset>
+
+                        <input type="submit" value="Répondre à l'enquête" id="sendBtn"
+                               aria-label="Envoyer mes réponses à l'enquête"/>
+
+                    </form>
+
+                    <div class="onoff" tabindex="0">
+                        <div id="table1">
+                            <table class="a42-table-fixed" role="presentation">
+                                <caption>Résultats de l'enquête</caption>
+                                <tr>
+                                    <th aria-hidden="true"></th>
+                                    <th scope="col"><b>A déjà utilisé cette génération de stockage (en %)</b></th>
+                                    <th scope="col"><b>Utilise quotidiennement cette génération de stockage (en %)</b>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><b>1re génération</b></th>
+                                    <td>3</td>
+                                    <td>0</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><b>2e génération</b></th>
+                                    <td>92</td>
+                                    <td>62</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><b>3e génération</b></th>
+                                    <td>100</td>
+                                    <td>37</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><b>4e génération</b></th>
+                                    <td>100</td>
+                                    <td>100</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><b>5e génération</b></th>
+                                    <td>95</td>
+                                    <td>89</td>
+                                </tr>
+                            </table>
+                            <div class="a42-bgcolor-c1 a42-resultats-tableau">
+                                <button id="btn-resultats" class="a42-btn a42-btn-skeleton a42-btn-skeleton--focus">Voir
+                                    le nombre de répondants actuels
+                                </button>
+                                <p aria-live="polite" id="results-search"></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <aside role="complementary" tabindex="0">
+                        <h2>Ailleurs sur le web</h2>
+                        <div>
+                            <a aria-label="Aller sur le site de redhat.com dans une nouvelle fenêtre pour des informations sur l'Open Source et le stockage de logiciels"
+                               target="_blank"
+                               href="https://www.redhat.com/fr/technologies/storage" class="a42-btn a42-btn-skeleton">
+										<span class="a42-btn-flex">
+											<span class="a42-btn-flex_content">
+												<span class="a42-btn-flex_child">
+													<b class="a42-btn_title">Open Source et stockage de logiciels</b>
+												</span>
+											</span>
+										</span>
+                            </a>
+                        </div>
+                        <div>
+                            <a aria-label="Voir des informations sur le stockage en ligne sur le cloud dans une nouvelle fenêtre"
+                               target="_blank"
+                               href="http://www.stockageenligne.info/comparatif-stockage-cloud/"
+                               class="a42-btn a42-btn-skeleton">
+										<span class="a42-btn-flex">
+											<span class="a42-btn-flex_content">
+												<span class="a42-btn-flex_child">
+													<b class="a42-btn_title">Stockage en ligne sur le cloud</b>
+												</span>
+											</span>
+										</span>
+                            </a>
+                        </div>
+                        <div>
+                            <a aria-label="Chercher différents moyens de stockage dans une nouvelle fenêtre sur le web"
+                               target="_blank"
+                               href="http://leblogdulapin.fr/le-stockage-des-donnees/" class="a42-btn a42-btn-skeleton">
+										<span class="a42-btn-flex">
+											<span class="a42-btn-flex_content">
+												<span class="a42-btn-flex_child">
+													<b class="a42-btn_title">Présentation des différents moyens de stockage</b>
+												</span>
+											</span>
+										</span>
+                            </a>
+                        </div>
+                    </aside>
+                </section>
+            </div>
+
+        </div>
+    </main>
+
+    <footer role="contentinfo" class="a42-main-footer" tabindex="0">
+        <div class="a42-container">
+            <div class="a42-main-footer_col a42-credits">
+                <p class="a42-credits_title">
+                    <b>Texte extrait et adapté de l'article &laquo;&nbsp;<a
+                            href="https://fr.wikipedia.org/wik/Stockage_d'information">Stockage d'information</a>&nbsp;&raquo;
+                        de l'encyclopédie Wikipédia</b>
+                    <br/>(le 07/04/2021)
+                </p>
+
+            </div>
+        </div>
+    </footer>
+
+</div>
+
+<div id="dialog1" class="hidden" aria-labelledby="dialog1_title" tabindex="-1" role="dialog">
+    <h1 id="dialog1_title" class="dialog-title a42-title-gamma">Suivez-nous</h1>
+    <button onclick="closeDialog(this)" class="close-btn"><span class="sr-only">fermer</span></button>
+    <ul class="a42-contact">
+        <li>
+            <a href="https://twitter.com/" target="_blank">
+                <span class="sr-only">Nouvelle fenêtre : nous suivre sur <span lang="en">Twitter</span></span>
+                <svg aria-hidden="true" viewBox="0 0 30 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="m9.5 24a17.1 17.1 0 0 0 17.3-17.2 1.9 1.9 0 0 0 -.1-.8 11.8 11.8 0 0 0 3.1-3.2 14 14 0 0 1 -3.5 1 6.6 6.6 0 0 0 2.7-3.4 13.2 13.2 0 0 1 -3.9 1.5 6 6 0 0 0 -4.4-1.9 6.1 6.1 0 0 0 -6.1 6.1 5.9 5.9 0 0 0 .2 1.3 16.8 16.8 0 0 1 -12.5-6.3 6.2 6.2 0 0 0 -.8 3.1 5.8 5.8 0 0 0 2.7 5 5.4 5.4 0 0 1 -2.8-.8 6.1 6.1 0 0 0 4.9 6l-1.6.2h-1.2a6.3 6.3 0 0 0 5.7 4.2 12.4 12.4 0 0 1 -7.5 2.6h-1.5a17.4 17.4 0 0 0 9.3 2.6"/>
+                </svg>
+            </a>
+        </li>
+        <li>
+            <a href="https://www.linkedin.com/" target="_blank">
+                <span class="sr-only">Nouvelle fenêtre : nous suivre sur <span lang="en">LinkedIn</span></span>
+                <svg aria-hidden="true" viewBox="0 0 30 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="m25.2 0h-20.4a1.8 1.8 0 0 0 -1.8 1.7v20.6a1.8 1.8 0 0 0 1.8 1.7h20.4a1.8 1.8 0 0 0 1.8-1.7v-20.6a1.8 1.8 0 0 0 -1.8-1.7zm-15.1 20.5h-3.5v-11.5h3.5zm-1.8-13.1a2 2 0 0 1 -2-2 2 2 0 0 1 2-2.1 2.1 2.1 0 0 1 2.1 2.1 2 2 0 0 1 -2.1 2zm15.2 13.1h-3.6v-5.6c0-1.3 0-3.1-1.9-3.1s-2.1 1.5-2.1 3v5.7h-3.5v-11.5h3.4v1.6a3.9 3.9 0 0 1 3.4-1.9c3.6 0 4.3 2.4 4.3 5.5z"
+                          fill="#1d1d1b"/>
+                </svg>
+            </a>
+        </li>
+        <li>
+            <a href="http://eepurl.com/dgHY2b" target="_blank">
+                <span class="sr-only">Nouvelle fenêtre : s'inscrire à notre <span lang="en">newsletter</span></span>
+                <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="29.1" height="21"
+                     viewBox="0 0 29.1 21"
+                     class="a42-icon-newsletter">
+                    <g>
+                        <g id="ae01af33-9b93-412d-8a0f-378d554b35aa" data-name="icon-newsletter">
+                            <path
+                                    d="M21.2,5.2V0H20V1.1a13.1,13.1,0,0,1-9.1,4v7.7a12.6,12.6,0,0,1,9.1,4v1h1.2V12.7a3.9,3.9,0,0,0,3.2-3.8A3.7,3.7,0,0,0,21.2,5.2Zm0,6.3V6.4a2.6,2.6,0,0,1,2,2.5A2.6,2.6,0,0,1,21.2,11.5Z"></path>
+                            <path
+                                    d="M8.4,13.1H9.7V4.6H4.2A4.2,4.2,0,0,0,0,8.9a4.3,4.3,0,0,0,3.6,4.2l1.9,6.2a2.6,2.6,0,0,0,1.1,1.4,2.7,2.7,0,0,0,1.2.3h.7a2,2,0,0,0,1.4-1.4,2.7,2.7,0,0,0-.2-2.3A6.3,6.3,0,0,1,8.4,13.1Z"></path>
+                            <rect
+                                    x="26.1" y="8.3" width="3" height="1.21"></rect>
+                            <rect x="24.4" y="4.2" width="3" transform="translate(4.2 19.7) rotate(-45)"></rect>
+                            <rect
+                                    x="25.3" y="11.4" width="1.2" height="3.03"
+                                    transform="translate(-1.6 22.1) rotate(-45)"></rect>
+                        </g>
+                    </g>
+                </svg>
+            </a>
+        </li>
+        <li>
+            <a href="mailto:bonjour@access42.net" target="_blank">
+                <span class="sr-only">Ouverture de votre client email pour la rédaction d'un nouveau message à notre intention</span>
+                <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M 0.96367729,0.96367729 H 27.946643 V 20.787897 H 0.96367729 Z m 0,0 L 13.078478,13.078478 q 1.376681,1.101345 2.753363,0 L 27.946643,0.96367729 M 0.96367729,20.787897 10.875787,10.875787 m 7.158746,0 9.91211,9.91211"
+                          style="fill:none;stroke:#000000;stroke-width:1.92735457"/>
+                </svg>
+            </a>
+        </li>
+    </ul>
+</div>
+<!--AccessConfigJS-->
+<script src="accessconfig/js/accessconfig.min.js"></script>
+
+<script src="js/assets/utils.js" type="text/javascript"></script>
+<script src="js/dialog.js" type="text/javascript"></script>
+<script src="js/disclosure.js" type="text/javascript"></script>
+<script src="js/resultats.js" type="text/javascript"></script>
+<script src="js/form.js" type="text/javascript"></script>
+
+<script>
+    document.getElementById('menu').addEventListener("click", function (event) {
+        event.preventDefault()
+    });
+</script>
+</body>
+</html>	

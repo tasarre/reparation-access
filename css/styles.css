@@ -1,0 +1,4795 @@
+@charset "UTF-8";
+
+/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/**
+ * Remove default margin.
+ */
+
+body {
+  margin: 0;
+}
+
+/* HTML5 display definitions
+   ========================================================================== */
+
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11
+ * and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
+ */
+
+[hidden],
+template {
+  display: none;
+}
+
+/* Links
+   ========================================================================== */
+
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+
+a {
+  background-color: transparent;
+}
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/* Text-level semantics
+   ========================================================================== */
+
+/**
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ */
+
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+
+b,
+strong {
+  font-weight: bold;
+}
+
+/**
+ * Address styling not present in Safari and Chrome.
+ */
+
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari, and Chrome.
+ */
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+/* Embedded content
+   ========================================================================== */
+
+/**
+ * Remove border when inside `a` element in IE 8/9/10.
+ */
+
+img {
+  border: 0;
+}
+
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Grouping content
+   ========================================================================== */
+
+/**
+ * Address margin not present in IE 8/9 and Safari.
+ */
+
+figure {
+  margin: 1em 40px;
+}
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+
+hr {
+  box-sizing: content-box;
+  height: 0;
+}
+
+/**
+ * Contain overflow in all browsers.
+ */
+
+pre {
+  overflow: auto;
+}
+
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+/* Forms
+   ========================================================================== */
+
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+  margin: 0;
+  /* 3 */
+}
+
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ */
+
+button {
+  overflow: visible;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct `select` style inheritance in Firefox.
+ */
+
+button,
+select {
+  text-transform: none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  /*  border: 0;*/
+  /*  padding: 0;*/
+}
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+
+input {
+  line-height: normal;
+}
+
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome
+ *    (include `-moz` to future-proof).
+ */
+
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  /* 2 */
+  box-sizing: content-box;
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9/10/11.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Remove default vertical scrollbar in IE 8/9/10/11.
+ */
+
+textarea {
+  overflow: auto;
+}
+
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+
+optgroup {
+  font-weight: bold;
+}
+
+/* Tables
+   ========================================================================== */
+
+/**
+ * Remove most spacing between table cells.
+ */
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td,
+th {
+  padding: 0;
+}
+
+/*! AccessStyle | Access42 */
+
+/**
+ * ---------------------------------------
+ * ---------------------------------------
+ * COMMON A42 STYLES
+ * that should be available on any project
+ * ---------------------------------------
+ * ---------------------------------------
+ */
+
+/**
+ * -------------------------
+ * -------------------------
+ * @subsection GENERIC STYLE
+ * -------------------------
+ * -------------------------
+ */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+}
+
+html {
+  /* Magic line that smoothes font-rendering on WebKit engines. */
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  /* Magic line that smoothes font-rendering on Gecko engines. */
+  -moz-osx-font-smoothing: grayscale;
+  transform: translate(0, 0.1);
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f9fcff;
+  color: #343643;
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 100%;
+  /* 16px */
+  line-height: 1.5;
+  /* 24px */
+}
+
+[tabindex="-1"] {
+  outline: none;
+}
+
+* {
+  margin-bottom: 1.5rem;
+}
+
+* > *:last-child,
+[class*="a42-container"] > *:last-child {
+  margin-bottom: 0;
+}
+
+figure,
+.a42-gallery,
+* + img:not(.a42-asset-dry),
+img:not(.a42-asset-dry) + *,
+* + figure,
+figure + * {
+  margin-top: 2.25em;
+  /* 36px */
+}
+
+p,
+li,
+blockquote,
+q,
+figcaption,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+caption {
+  max-width: 80ch;
+}
+
+p {
+  margin-top: 0;
+}
+
+a {
+  color: #343643;
+  text-decoration: none;
+  border-bottom: 1px solid;
+  transition: border-bottom-color .25s, opacity .25s;
+}
+
+.current-page {
+  padding: 0.5rem;
+}
+
+.current-page a {
+  color: #fff;
+}
+
+.current-page a:before {
+  content:"> "
+}
+
+a:focus,
+a:hover,
+a:active {
+  border-bottom-color: transparent;
+}
+
+.a42-high-contrast a:focus,
+.a42-high-contrast a:hover,
+.a42-high-contrast a:active,
+.a42-inv-contrast a:focus,
+.a42-inv-contrast a:hover,
+.a42-inv-contrast a:active {
+  border-bottom-color: transparent !important;
+}
+
+legend {
+  margin: 0 0 1.5em;
+}
+
+label {
+  margin-bottom: 0;
+}
+
+abbr,
+abbr[title] {
+  text-decoration: none;
+}
+
+.a42-contrib-embed {
+  max-width: none;
+  position: relative;
+  padding-bottom: 56.25%;
+  /* 16:9 */
+  padding-top: 25px;
+  height: 0;
+}
+
+.a42-contrib-embed iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.a42-img,
+blockquote {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+blockquote {
+  border-left: 3px solid #962E3F;
+  padding-left: 1.5em;
+}
+
+blockquote * {
+  margin-left: 0;
+  max-width: 80ch;
+}
+
+footer,
+cite {
+  font-style: normal;
+}
+
+blockquote p + footer {
+  margin-top: -.844em;
+}
+
+@media screen and (min-width: 50em) {
+  blockquote {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+}
+
+@media screen and (min-width: 30em) {
+  blockquote {
+    padding-left: 1em;
+  }
+}
+
+.a42-element-reinit {
+  background-color: inherit;
+  color: inherit;
+}
+
+/*
+	Improved screen reader only CSS class
+	@author Gaël Poupard
+		@note Based on Yahoo!'s technique
+		@author Thierry Koblentz
+		@see https://developer.yahoo.com/blogs/ydn/clip-hidden-content-better-accessibility-53456.html
+	* 1.
+		@note `clip` is deprecated but works everywhere
+		@see https://developer.mozilla.org/en-US/docs/Web/CSS/clip
+	* 2.
+		@note `clip-path` is the future-proof version, but not very well supported yet
+		@see https://developer.mozilla.org/en-US/docs/Web/CSS/clip-path
+		@see http://caniuse.com/#search=clip-path
+		@author Yvain Liechti
+		@see https://twitter.com/ryuran78/status/778943389819604992
+	* 3.
+		@note preventing text to be condensed
+		author J. Renée Beach
+		@see https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+		@note Drupal 8 goes with word-wrap: normal instead
+		@see https://www.drupal.org/node/2045151
+		@see http://cgit.drupalcode.org/drupal/commit/?id=5b847ea
+	* 4.
+		@note !important is important
+		@note Obviously you wanna hide something
+		@author Harry Roberts
+		@see https://csswizardry.com/2016/05/the-importance-of-important/
+*/
+
+.sr-only {
+  border: 0 !important;
+  clip: rect(1px, 1px, 1px, 1px) !important;
+  /* 1 */
+  -webkit-clip-path: inset(50%) !important;
+  clip-path: inset(50%) !important;
+  /* 2 */
+  height: 1px !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  padding: 0 !important;
+  position: absolute !important;
+  width: 1px !important;
+  white-space: nowrap !important;
+  /* 3 */
+}
+
+/*
+	Use in conjunction with .sr-only to only display content when it's focused.
+	@note Useful for skip links 
+	@see http://www.w3.org/TR/2013/NOTE-WCAG20-TECHS-20130905/G1
+	@note Based on a HTML5 Boilerplate technique, included in Bootstrap
+	@note Fixed a bug with position: static on iOS 10.0.2 + VoiceOver
+		@author Sylvain Pigeard
+		@see https://github.com/twbs/bootstrap/issues/20732
+*/
+
+.sr-only-focusable:focus,
+.sr-only-focusable:active {
+  clip: auto !important;
+  -webkit-clip-path: none !important;
+  clip-path: none !important;
+  height: auto !important;
+  margin: auto !important;
+  overflow: visible !important;
+  width: auto !important;
+  white-space: normal !important;
+}
+
+code,
+var,
+kbd {
+  background-color: #e3ebf2;
+  padding-right: .25em;
+  padding-left: .25em;
+}
+
+pre {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.a42-item-block {
+  display: block;
+}
+
+.center {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.center,
+.a42-text-center {
+  text-align: center;
+  max-width: none;
+}
+
+.a42-text-justify {
+  text-align: justify;
+}
+
+.a42-text-left {
+  text-align: left;
+}
+
+.a42-text-right {
+  text-align: right;
+}
+
+.a42-item-mt0 {
+  margin-top: 0;
+}
+
+.a42-item-mb0,
+.a42-item-dry {
+  margin-bottom: 0;
+}
+
+.a42-item-mt05 {
+  margin-top: .5em;
+}
+
+.a42-item-mb05 {
+  margin-bottom: .5em;
+}
+
+.a42-item-mt1 {
+  margin-top: 1em;
+}
+
+.a42-item-mt15 {
+  margin-top: 1.5em;
+}
+
+.a42-item-mt2 {
+  margin-top: 2em;
+}
+
+.a42-item-mb1 {
+  margin-bottom: 1em;
+}
+
+.a42-item-mb15 {
+  margin-bottom: 1.5em;
+}
+
+.a42-item-pr1 {
+  padding-right: 1em;
+}
+
+.a42-item-pr15 {
+  padding-right: 1.5em;
+}
+
+.a42-item-pr2 {
+  padding-right: 2em;
+}
+
+/* JAVASCRIPT */
+
+.is-closed {
+  display: none;
+}
+
+/* CLEARFIX */
+
+.a42-clear::before,
+.a42-clear::after {
+  content: '';
+  display: table;
+}
+
+.a42-clear::after {
+  clear: both;
+}
+
+/* IMAGES */
+
+figure,
+img,
+.a42-gallery {
+  margin-bottom: 3rem;
+}
+
+figure {
+  margin-right: 0;
+  margin-left: 0;
+  text-align: center;
+}
+
+figure > * {
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 0;
+}
+
+figcaption {
+  margin-top: .750em;
+  /* 12px */
+  color: #343643;
+}
+
+img,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+svg {
+  width: 100%;
+}
+
+path,
+polygon,
+svg,
+svg * {
+  fill: currentColor;
+}
+
+p img,
+table img,
+figure img,
+div img {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.a42-gallery {
+  text-align: center;
+}
+
+.a42-gallery > * {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 0;
+}
+
+@media screen and (min-width: 50em) {
+  .a42-gallery-2cols {
+    overflow: hidden;
+  }
+
+  .a42-gallery-2cols > * {
+    float: left;
+    display: block;
+  }
+
+  .a42-gallery-2cols > * {
+    width: 50%;
+  }
+
+  .a42-gallery-2cols > *:nth-child(odd) {
+    clear: left;
+    padding-right: 1%;
+  }
+
+  .a42-gallery-2cols > *:nth-child(even) {
+    padding-left: 1%;
+  }
+
+  .a42-gallery-2cols > *:nth-last-child(-n+2) {
+    margin-bottom: 0;
+  }
+}
+
+/* Geomanist Medium (used for bold, h3 and h5) */
+
+@font-face {
+  font-family: 'GeoMed';
+  src: url('fonts/geomanist-medium-webfont.woff2') format('woff2'),
+	 url('fonts/geomanist-medium-webfont.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GeoMed';
+  src: url('fonts/geomanist-medium-italic-webfont.woff2') format('woff2'),
+		 url('fonts/geomanist-medium-italic-webfont.woff') format('woff');
+  font-weight: 600;
+  font-style: italic;
+}
+
+/* Geomanist Book (used for h4 and h6) */
+
+@font-face {
+  font-family: 'GeoBook';
+  src: url('fonts/geomanist-book-webfont.woff2') format('woff2'),
+	 url('fonts/geomanist-book-webfont.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GeoBook';
+  src: url('fonts/geomanist-book-italic-webfont.woff2') format('woff2'),
+		 url('fonts/geomanist-book-italic-webfont.woff') format('woff');
+  font-weight: 500;
+  font-style: italic;
+}
+
+/* Font Awesome */
+
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('fonts/fontawesome-webfont.woff2?v=4.3.0') format('woff2'),
+		url('fonts/fontawesome-webfont.woff?v=4.3.0') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* OpenDys */
+
+@font-face {
+  font-family: 'opendys';
+  src: url('fonts/opendyslexic-regular-webfont.woff2') format('woff2'),
+			 url('fonts/opendyslexic-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/**
+ * -------------------------
+ * -------------------------
+ * @section COLORS VARS
+ * -------------------------
+ * -------------------------
+ */
+
+:root {
+  /* c0 : blanc */
+  /* c1 : bleu outremer */
+  /* c2 : gris anthracite */
+  /* c3 : bleu moyen */
+  /* c4 : bleu ciel*/
+  /* c5 : rouge cramoisi */
+  /* c6 : sable */
+  /* c7 : blanc cassé */
+  /* c8 : bleu orage */
+  /* c9 : bleu argentin */
+  /* c2 complémentaire */
+  /* c4 à 50 % d’opacité */
+  /* c9 complémentaire */
+  /* More colors */
+  /* custom background-color for .hljs elements */
+  /* Legacy vars */
+  /**gris fond**/
+  /** Contrastes renforcés **/
+  /** Couleurs inversées jaune/bleues **/
+  /* jaune*/
+  /* bleu*/
+}
+
+/**
+ * -------------------------
+ * -------------------------
+ * @section COLORS CLASS
+ * -------------------------
+ * -------------------------
+ */
+
+/** TEXT COLOR **/
+
+.a42-color-c0 {
+  color: #fff;
+}
+
+.a42-color-c1 {
+  color: #0B1B34;
+}
+
+.a42-color-c2 {
+  color: #343643;
+}
+
+.a42-color-c3 {
+  color: #A0B0BD;
+}
+
+.a42-color-c4 {
+  color: #CEDAE6;
+}
+
+.a42-color-c5 {
+  color: #962E3F;
+}
+
+.a42-color-c6 {
+  color: #F2EBC7;
+}
+
+.a42-color-c7 {
+  color: #f9fcff;
+}
+
+.a42-color-c8 {
+  color: #7d829a;
+}
+
+.a42-color-c9 {
+  color: #31486e;
+}
+
+/** BACKGROUND COLOR **/
+
+span[class*="a42-bgcolor-"],
+strong[class*="a42-bgcolor-"],
+b[class*="a42-bgcolor-"] {
+  padding-right: .25em;
+  padding-left: .25em;
+}
+
+/* Force .a42-title-n headings to adapt */
+
+[class*="a42-bgcolor-"] [class*="a42-title-"],
+[class*="a42-bgcolor-"] h1:not([class*="a42-color-"]),
+[class*="a42-bgcolor-"] h2:not([class*="a42-color-"]),
+[class*="a42-bgcolor-"] h3:not([class*="a42-color-"]),
+[class*="a42-bgcolor-"] h4:not([class*="a42-color-"]),
+[class*="a42-bgcolor-"] h5:not([class*="a42-color-"]),
+[class*="a42-bgcolor-"] h6:not([class*="a42-color-"]) {
+  color: inherit;
+}
+
+/* c0 : blanc */
+
+.a42-bgcolor-c0 {
+  background-color: #fff;
+  color: #0B1B34;
+}
+
+/* c1 : bleu outremer */
+
+.a42-bgcolor-c1 {
+  background-color: #0B1B34;
+  color: #fff;
+}
+
+.a42-bgcolor-c1[class*="a42-title-"],
+.a42-bgcolor-c1 > * {
+  color: #fff;
+}
+
+.a42-bgcolor-c1 input,
+.a42-bgcolor-c1 textarea,
+.a42-bgcolor-c1 select {
+  color: #0B1B34;
+}
+
+.a42-bgcolor-c1 kbd,
+.a42-bgcolor-c1 code,
+.a42-bgcolor-c1 samp,
+.a42-bgcolor-c1 var {
+  background-color: rgb(4, 11, 21);
+}
+
+.a42-bgcolor-c1 * {
+  color: inherit;
+}
+
+/* c2 : gris anthracite */
+
+.a42-bgcolor-c2 {
+  background-color: #343643;
+  color: #fff;
+}
+
+.a42-bgcolor-c2[class*="a42-title-"],
+.a42-bgcolor-c2 > * {
+  color: #fff;
+}
+
+/* Warning: don't use the .a42-bgcolor-c2 * selector or it will crush the other .a42-bgcolor-N * styles. */
+
+.a42-bgcolor-c2 input,
+.a42-bgcolor-c2 textarea,
+.a42-bgcolor-c2 select {
+  color: #0B1B34;
+}
+
+.a42-bgcolor-c2 kbd,
+.a42-bgcolor-c2 code,
+.a42-bgcolor-c2 samp,
+.a42-bgcolor-c2 var {
+  background-color: rgb(31, 32, 40);
+}
+
+/* c2a : complémentaire gris anthracite */
+
+.a42-bgcolor-c2a {
+  background-color: #272831;
+  color: #fff;
+}
+
+.a42-bgcolor-c2a[class*="a42-title-"],
+.a42-bgcolor-c2a > * {
+  color: #fff;
+}
+
+/* c3 : bleu moyen */
+
+.a42-bgcolor-c3 {
+  background-color: #A0B0BD;
+  color: #0B1B34;
+}
+
+/* c4 : bleu ciel */
+
+.a42-bgcolor-c4 {
+  background-color: #CEDAE6;
+  color: #0B1B34;
+}
+
+/*.high-c .a42-bgcolor-c4 .a42-color-c5{color: inherit;}*/
+
+/* c4 : bleu ciel à 50% d’opacité */
+
+.a42-bgcolor-c4a {
+  background-color: #e3ebf2;
+  color: #0B1B34;
+}
+
+/* c5 : rouge cramoisi */
+
+.a42-bgcolor-c5 {
+  background-color: #962E3F;
+  color: #fff;
+}
+
+.a42-bgcolor-c5[class*="a42-title-"] {
+  color: #fff;
+}
+
+.a42-bgcolor-c5 kbd,
+.a42-bgcolor-c5 code,
+.a42-bgcolor-c5 samp,
+.a42-bgcolor-c5 var {
+  background-color: rgb(75, 23, 32);
+}
+
+/*.a42-bgcolor-c5 .a42-btn-toggle:focus,
+.a42-edito .a42-bgcolor-c5 .a42-btn-toggle:focus,
+.a42-bgcolor-c5 .a42-btn-toggle:hover,
+.a42-edito .a42-bgcolor-c5 .a42-btn-toggle:hover,
+.a42-bgcolor-c5 .a42-btn-toggle:active,
+.a42-edito .a42-bgcolor-c5 .a42-btn-toggle:active{
+	background-color: color(var(--c5) shade(30%));
+	border-color: color(var(--c5) shade(30%));
+}*/
+
+/* c6 : sable */
+
+.a42-bgcolor-c6 {
+  background-color: #F2EBC7;
+  color: #343643;
+}
+
+.a42-bgcolor-c6 .a42-edito ul li::before,
+.a42-edito .a42-bgcolor-c6 ul li::before {
+  background-color: rgb(169, 165, 139);
+}
+
+.a42-bgcolor-c6 kbd,
+.a42-bgcolor-c6 code,
+.a42-bgcolor-c6 samp,
+.a42-bgcolor-c6 var {
+  background: rgb(38, 39, 46);
+}
+
+/* c7 : blanc cassé */
+
+.a42-bgcolor-c7 {
+  background-color: #f9fcff;
+  color: #0B1B34;
+}
+
+/* c8 : bleu orage */
+
+.a42-bgcolor-c8 {
+  background-color: #7d829a;
+  color: #0B1B34;
+}
+
+.a42-bgcolor-c8[class*="a42-title"] {
+  color: #0B1B34;
+}
+
+/* c9 : bleu argentin */
+
+.a42-bgcolor-c9 {
+  background-color: #31486e;
+  color: #fff;
+}
+
+.a42-bgcolor-c9[class*="a42-title"] {
+  color: #fff;
+}
+
+.a42-bgcolor-c9 kbd,
+.a42-bgcolor-c9 code,
+.a42-bgcolor-c9 samp,
+.a42-bgcolor-c9 var {
+  background-color: #0B1B34;
+}
+
+.a42-bgcolor-c9 * {
+  color: inherit;
+}
+
+/* Common color rules */
+
+/**[class*="a42-bgcolor-"]:not(.a42-bgcolor-c0):not(.a42-bgcolor-c4):not(.a42-bgcolor-c4a):not(.a42-bgcolor-c6):not(.a42-bgcolor-c7) a,
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a{
+	color:inherit;
+}
+
+	*[class*="a42-bgcolor-"]:not(.a42-bgcolor-c0):not(.a42-bgcolor-c4):not(.a42-bgcolor-c4a):not(.a42-bgcolor-c6):not(.a42-bgcolor-c7) a:focus,
+	*[class*="a42-bgcolor-"]:not(.a42-bgcolor-c0):not(.a42-bgcolor-c4):not(.a42-bgcolor-c4a):not(.a42-bgcolor-c6):not(.a42-bgcolor-c7) a:active,
+	*[class*="a42-bgcolor-"]:not(.a42-bgcolor-c0):not(.a42-bgcolor-c4):not(.a42-bgcolor-c4a):not(.a42-bgcolor-c6):not(.a42-bgcolor-c7) a:hover,
+	h1 a:focus,
+	h1 a:hover,
+	h1 a:active,
+	h2 a:focus,
+	h2 a:hover,
+	h2 a:active,
+	h3 a:focus,
+	h3 a:hover,
+	h3 a:active,
+	h4 a:focus,
+	h4 a:hover,
+	h4 a:active,
+	h5 a:focus,
+	h5 a:hover,
+	h5 a:active,
+	h6 a:focus,
+	h6 a:hover,
+	h6 a:active{
+		opacity: .6;
+	}*/
+
+/*.high-c kbd,
+.high-c code,
+.high-c code.hljs,
+.high-c samp,
+.high-c var,
+.high-c .hljs-variable, .high-c .hljs-attribute, 
+.high-c .hljs-tag, .high-c .hljs-regexp, 
+.high-c .ruby .hljs-constant, .high-c .xml .hljs-tag .hljs-title, 
+.high-c .xml .hljs-pi, .high-c .xml .hljs-doctype, 
+.high-c .html .hljs-doctype, .high-c .css .hljs-id, 
+.high-c .css .hljs-class, .high-c .css .hljs-pseudo{
+	background-color: black;
+	color: white;
+}*/
+
+/* BORDER COLOR */
+
+.a42-border-c0 {
+  border-color: #fff !important;
+}
+
+.a42-border-c1 {
+  border-color: #0B1B34 !important;
+}
+
+.a42-border-c2 {
+  border-color: #343643 !important;
+}
+
+.a42-border-c3 {
+  border-color: #A0B0BD !important;
+}
+
+.a42-border-c4 {
+  border-color: #CEDAE6 !important;
+}
+
+.a42-border-c4a {
+  border-color: #e3ebf2 !important;
+}
+
+.a42-border-c5 {
+  border-color: #962E3F !important;
+}
+
+.a42-border-c6 {
+  border-color: #F2EBC7 !important;
+}
+
+.a42-border-c7 {
+  border-color: #f9fcff !important;
+}
+
+.a42-border-c8 {
+  border-color: #7d829a !important;
+}
+
+.a42-border-c9 {
+  border-color: #31486e !important;
+}
+
+/**
+ * -------------------------
+ * FOOTER
+ * -------------------------
+ */
+
+.a42-main-footer {
+  position: relative;
+  z-index: 2;
+  margin-top: 6em;
+  padding-top: 3em;
+  padding-bottom: 6em;
+  background-color: #F2EBC7;
+  text-align: center;
+  color: #0B1B34;
+}
+
+@media screen and (max-width: 19.9em) {
+  .a42-main-footer {
+    padding: 3rem 2rem 5rem;
+  }
+}
+
+.a42-main-footer::before {
+  content: '';
+  position: absolute;
+  top: -1.75rem;
+  left: 0;
+  right: 0;
+  background-color: inherit;
+  width: 100%;
+  height: 5em;
+  transform: skew(0deg,1.2deg);
+  z-index: -1;
+}
+
+.a42-main-footer .a42-logo {
+  margin-bottom: 0;
+  width: 6.875rem;
+  /* 110px */
+  height: 6.875rem;
+  /* 110px */
+}
+
+.a42-main-footer ul {
+  list-style: none;
+  padding: 0;
+  max-width: none;
+}
+
+.a42-main-footer_col + .a42-main-footer_col {
+  margin-top: 1.688rem;
+}
+
+.a42-main-footer_col:last-child *:last-child {
+  margin-bottom: 0;
+}
+
+.a42-main-footer img {
+  margin-top: 2.532rem;
+  margin-bottom: 0;
+}
+
+.a42-main-footer_more {
+  font-size: .875em;
+  line-height: 1.714em;
+}
+
+.a42-main-footer_more * {
+  margin-bottom: 0.857rem;
+}
+
+.a42-credits > *:last-child {
+  margin-bottom: 0;
+}
+
+.a42-credits_txt {
+  font-weight: bold;
+  text-align: center;
+  max-width: none;
+  font-family: 'GeoRegular', Verdana, Arial, sans-serif;
+}
+
+.a42-credits_title a {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.a42-credits_title svg {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* Bugfix for IE11. Works only if the `svg` tag misses `width` and `height` HTML attributes. */
+
+.a42-contact svg {
+  width: 1.875rem;
+  /* 30px */
+  height: 1.5rem;
+  /* 24px */
+  text-align: center;
+}
+
+.a42-credits p,
+.a42-credits blockquote,
+.a42-credits q,
+.a42-credits figcaption,
+.a42-credits h1,
+.a42-credits h2,
+.a42-credits h3,
+.a42-credits h4,
+.a42-credits h5,
+.a42-credits h6,
+.a42-credits caption {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.a42-date {
+  font-size: .8em;
+}
+
+.a42-contact{
+  text-align:center;
+  padding: 0;
+  margin: 5em 0;
+}
+
+.a42_credits{
+  min-width:800px;
+}
+
+.a42-credits_title a,
+.a42-contact a {
+  color: inherit;
+  text-decoration: underline;
+  border-bottom: 0;
+}
+
+.a42-contact span {
+  display:inline-block;margin-bottom:0;
+}
+.a42-contact a {
+  display: block;
+  transition: opacity .5s;
+}
+
+.a42-contact a:focus,
+.a42-contact a:hover,
+.a42-contact a:active {
+  opacity: .6;
+}
+
+.a42-contact li {
+  display: inline-block;
+  vertical-align: baseline;
+  margin-bottom: 0;
+}
+
+.a42-contact li + li {
+  margin-left: 1.1em;
+}
+
+:root {
+  /* Violets */
+  /* Jaunes, oranges */
+  /* Rouge */
+  /* Verts */
+  /* Bleus */
+  /* Gris foncé */
+  /* Intemporels */
+  /* Correspondances couleurs */
+}
+
+.access-tooltip {
+  position: absolute;
+  color: 1px solid #0B1B34;
+  background-color: #0B1B34;
+  padding: .3em;
+  color: #fff;
+  font-size: 80%;
+}
+
+/* Specific styles for A42 Style */
+
+/*
+	-----------
+	-----------
+	BREAKPOINTS (width)
+	-----------
+	-----------
+*/
+
+/* 100em = 1600px */
+
+/* 80em = 1280px */
+
+/* 64em = 1024px */
+
+/* 61.250em = 980px */
+
+/* 50em = 800px*/
+
+/* Only medium + desktop */
+
+/* 40em = 640px */
+
+/* Only tablet to medium */
+
+/* 30em = 480px */
+
+/* Only small to medium */
+
+/* 20em = 320px */
+
+/*
+	-----------
+	-----------
+	BREAKPOINTS (height)
+	-----------
+	-----------
+*/
+
+/* 50em = 800px */
+
+/* XXL */
+
+/* XL */
+
+/* Desktop */
+
+/* 35em = 560px */
+
+/**
+MATRICE
+WIDTH	HEIGHT
+
+504 	504
+
+400 	640
+
+390 	695
+
+384 	640
+
+375 	667
+
+360 	640
+360 	600
+360 	598
+
+320 	568
+320 	533
+320 	480
+
+
+PHABLET
+414 	736
+
+
+TABLETTE
+
+1024 	1366
+
+800 	1280
+
+768 	1024
+
+
+**/
+
+/*
+MAIN
+Index
+======
+- GENERIC STYLE
+- TYPO
+- LAYOUT
+- HEADER
+- CONTENT
+- FORMS
+- MODAL WINDOW
+- TOGGLE BOX
+- CUSTOM STYLES
+- ACCESSCONFIG CUSTOM
+- MOTION SENSITIVITY
+*/
+
+/**
+ * -------------------------
+ * @subsection GENERIC STYLE
+ * -------------------------
+ */
+
+body {
+  scroll-behavior: smooth;
+}
+
+br {
+  margin-bottom: 0;
+}
+
+/* LINKS */
+
+a:focus,
+a:hover,
+a:active {
+  text-decoration: none;
+}
+
+.a42-link-reset {
+  border-bottom: 0;
+  margin-top: 0;
+  top: 0;
+}
+
+.a42-link-reset:focus,
+.a42-link-reset:hover,
+.a42-link-reset:active {
+  opacity: .6;
+}
+
+.a42-bgcolor-c9 .a42-link-reset:focus,
+.a42-bgcolor-c9 .a42-link-reset:hover,
+.a42-bgcolor-c9 .a42-link-reset:active {
+  color: #F2EBC7;
+}
+
+.a42-link-alpha {
+  text-decoration: none;
+  border-bottom: 1px solid;
+  font-weight: bold;
+}
+
+.a42-ac-high-contrast .a42-link-alpha:focus,
+.a42-ac-high-contrast .a42-link-alpha:hover,
+.a42-ac-high-contrast .a42-link-alpha:active,
+.a42-ac-inv-contrast .a42-link-alpha:focus,
+.a42-ac-inv-contrast .a42-link-alpha:hover,
+.a42-ac-inv-contrast .a42-link-alpha:active {
+  border-bottom: 0 !important;
+}
+
+@media screen and (max-width: 29.9em) {
+  .a42-link-alpha {
+    font-size: .9em;
+  }
+}
+
+@media screen and (min-width: 40em) {
+  .a42-link-alpha {
+    font-family: 'GeoMed', Verdana, sans-serif;
+    font-weight: normal;
+    font-size: 1.125em;
+    line-height: 1.333em;
+  }
+}
+
+/* IMAGES */
+
+.a42-picto-container {
+  margin-bottom: .75em;
+}
+
+.a42-picto-container * {
+  width: 3rem;
+  height: 3rem;
+}
+
+@media screen and (min-width: 61.25em) {
+  .a42-picto-container {
+    margin-bottom: 1.5em;
+  }
+
+  .a42-picto-container * {
+    width: 4.5rem;
+    /* 72px */
+    height: 4.5rem;
+    /* 72px */
+  }
+}
+
+.a42-picto-container * {
+  display: block;
+}
+
+.a42-picto-container + *,
+.a42-picto-container + [class*="a42-title"] {
+  margin-top: 0;
+}
+
+/* TABLES */
+
+table {
+  width: 100%;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  border-collapse: collapse;
+  font-size: .9em;
+}
+
+.a42-table-4cols th,
+.a42-table-4cols td {
+  width: 25%;
+}
+
+table + h2,
+table + h3,
+table + h4,
+table + h5,
+table + h6 {
+  margin-top: 5.064rem;
+}
+
+caption {
+  margin-bottom: 1.5em;
+}
+
+th,
+td {
+  padding: .5em;
+  text-align: left;
+  vertical-align: top;
+  border: 1px solid #CEDAE6;
+}
+
+th {
+  min-width: 10rem;
+  background-color: #e3ebf2;
+}
+
+.a42-table-giant th {
+  min-width: 0;
+}
+
+.a42-cell-middle {
+  vertical-align: middle;
+}
+
+tr:first-child th[aria-hidden="true"],
+tr:first-child td[aria-hidden="true"] {
+  border-width: 0 1px 1px 0;
+}
+
+thead tr:first-child th[aria-hidden="true"],
+thead tr:first-child td[aria-hidden="true"] {
+  border-width: 0;
+}
+
+thead th {
+  text-align: center;
+}
+
+thead th[aria-hidden="true"] {
+  border-left: 0;
+  border-top: 0;
+}
+
+td {
+  background-color: #fff;
+}
+
+td[aria-hidden="true"] {
+  background-color: #f9fcff;
+}
+
+caption {
+  color: #0B1B34;
+  font-weight: bold;
+}
+
+.a42-legend {
+  margin-top: -1.688em;
+}
+
+th[scope="row"],
+.tableizer-firstrow {
+  text-align: left;
+}
+
+.vertical-table th {
+  max-width: 20em;
+  background-color: #0B1B34;
+  color: #fff;
+}
+
+.a42-table-fixed {
+  table-layout: fixed;
+}
+
+/* Restitution */
+
+[class*="a42-restit-"] {
+  padding-right: 2.5rem;
+  background-repeat: no-repeat;
+  background-position: calc(100% - .75rem) .75rem;
+  background-size: 1.250em 1.250em;
+}
+
+.a42-restit-good {
+  background-color: #fafffa;
+  background-image: url('data:image/svg+xml;base64,PHN2ZyBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAyMCAyMCIgdmlld0JveD0iMCAwIDIwIDIwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Im0yMCA1LjYtMTIuMiAxMi4yLTcuOC03LjggMy4zLTMuMyA0LjQgNC40IDguOS04Ljl6IiBmaWxsPSIjMWY3MzU0Ii8+PC9zdmc+');
+}
+
+.a42-restit-good code,
+.a42-restit-good var,
+.a42-restit-good kbd {
+  background-color: #e9f5e9;
+}
+
+.a42-ac-high-contrast .a42-restit-good {
+  background-image: url('data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjIwIiB2aWV3Qm94PSIwIDAgMjAgMjAiIHdpZHRoPSIyMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJtMjAgNS42LTEyLjIgMTIuMi03LjgtNy44IDMuMy0zLjMgNC40IDQuNCA4LjktOC45eiIgZmlsbD0iI2ZmZiIvPjwvc3ZnPg==');
+}
+
+.a42-ac-inv-contrast .a42-restit-good {
+  background-image: url('data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjIwIiB2aWV3Qm94PSIwIDAgMjAgMjAiIHdpZHRoPSIyMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJtMjAgNS42LTEyLjIgMTIuMi03LjgtNy44IDMuMy0zLjMgNC40IDQuNCA4LjktOC45eiIgZmlsbD0iI2ZmMCIvPjwvc3ZnPg==');
+}
+
+.a42-restit-bad {
+  background-color: #fcf7f8;
+  background-image: url('data:image/svg+xml;base64,PHN2ZyBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAyMCAyMCIgdmlld0JveD0iMCAwIDIwIDIwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Im0xNS44IDE5LjUtNS44LTUuOC01LjggNS44LTMuNy0zLjcgNS44LTUuOC01LjgtNS44IDMuNy0zLjcgNS44IDUuOCA1LjgtNS44IDMuNyAzLjctNS44IDUuOCA1LjggNS44eiIgZmlsbD0iIzk2MmUzZiIvPjwvc3ZnPg==');
+}
+
+.a42-restit-bad code,
+.a42-restit-bad var,
+.a42-restit-bad kbd {
+  background-color: #f5e9eb;
+}
+
+.a42-ac-high-contrast .a42-restit-bad {
+  background-image: url('data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjIwIiB2aWV3Qm94PSIwIDAgMjAgMjAiIHdpZHRoPSIyMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJtMTUuOCAxOS41LTUuOC01LjgtNS44IDUuOC0zLjctMy43IDUuOC01LjgtNS44LTUuOCAzLjctMy43IDUuOCA1LjggNS44LTUuOCAzLjcgMy43LTUuOCA1LjggNS44IDUuOHoiIGZpbGw9IiNmZmYiLz48L3N2Zz4=');
+}
+
+.a42-ac-inv-contrast .a42-restit-bad {
+  background-image: url('data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjIwIiB2aWV3Qm94PSIwIDAgMjAgMjAiIHdpZHRoPSIyMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJtMTUuOCAxOS41LTUuOC01LjgtNS44IDUuOC0zLjctMy43IDUuOC01LjgtNS44LTUuOCAzLjctMy43IDUuOCA1LjggNS44LTUuOCAzLjcgMy43LTUuOCA1LjggNS44IDUuOHoiIGZpbGw9IiNmZjAiLz48L3N2Zz4=');
+}
+
+.a42-restit-na {
+  background-color: #f0f5fa;
+  color: #A0B0BD;
+  background-image: url('data:image/svg+xml;base64,PHN2ZyBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAyMCAyMCIgdmlld0JveD0iMCAwIDIwIDIwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Im0yLjMgNy43Yy0xLjMgMC0yLjMgMS4xLTIuMyAyLjNzMSAyLjMgMi4zIDIuM2MxLjIgMCAyLjMtMSAyLjMtMi4zcy0xLjEtMi4zLTIuMy0yLjN6bTcuNyAwYy0xLjIgMC0yLjMgMS0yLjMgMi4zczEgMi4zIDIuMyAyLjNjMS4yIDAgMi4zLTEgMi4zLTIuM3MtMS4xLTIuMy0yLjMtMi4zem03LjcgMGMtMS4yIDAtMi4zIDEtMi4zIDIuM3MxIDIuMyAyLjMgMi4zYzEuMiAwIDIuMy0xIDIuMy0yLjNzLTEtMi4zLTIuMy0yLjN6IiBmaWxsPSIjYTBiMGJkIi8+PC9zdmc+');
+}
+
+.a42-ac-high-contrast .a42-restit-na {
+  background-image: url('data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjIwIiB2aWV3Qm94PSIwIDAgMjAgMjAiIHdpZHRoPSIyMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJtMi4zIDcuN2EyLjMgMi4zIDAgMCAwIDAgNC42IDIuMyAyLjMgMCAwIDAgMC00LjZ6bTcuNyAwYTIuMyAyLjMgMCAwIDAgLTIuMyAyLjMgMi4zIDIuMyAwIDAgMCAyLjMgMi4zIDIuMyAyLjMgMCAxIDAgMC00LjZ6bTcuNyAwYTIuMyAyLjMgMCAwIDAgLTIuMyAyLjMgMi4zIDIuMyAwIDAgMCAyLjMgMi4zIDIuMyAyLjMgMCAwIDAgMi4zLTIuMyAyLjMgMi4zIDAgMCAwIC0yLjMtMi4zeiIgZmlsbD0iI2ZmZiIvPjwvc3ZnPg==');
+}
+
+.a42-ac-inv-contrast .a42-restit-na {
+  background-image: url('data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjIwIiB2aWV3Qm94PSIwIDAgMjAgMjAiIHdpZHRoPSIyMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJtMi4zIDcuN2EyLjMgMi4zIDAgMCAwIDAgNC42IDIuMyAyLjMgMCAwIDAgMC00LjZ6bTcuNyAwYTIuMyAyLjMgMCAwIDAgLTIuMyAyLjMgMi4zIDIuMyAwIDAgMCAyLjMgMi4zIDIuMyAyLjMgMCAxIDAgMC00LjZ6bTcuNyAwYTIuMyAyLjMgMCAwIDAgLTIuMyAyLjMgMi4zIDIuMyAwIDAgMCAyLjMgMi4zIDIuMyAyLjMgMCAwIDAgMi4zLTIuMyAyLjMgMi4zIDAgMCAwIC0yLjMtMi4zeiIgZmlsbD0iI2ZmMCIvPjwvc3ZnPg==');
+}
+
+/* LISTS */
+
+ul,
+ol {
+  margin-top: 0;
+}
+
+@media screen and (max-width: 39.9em) {
+  ul,
+  ol {
+    padding-left: 1.5rem;
+  }
+}
+
+ul ul,
+ul ol,
+ol ol,
+ol ul {
+  margin-top: 1.5em;
+}
+
+li {
+  margin-bottom: 1.5em;
+}
+
+/*ol > li:last-child,
+ul > li:last-child{
+	margin-bottom: 0;
+}*/
+
+.a42-list-reset {
+  list-style: none;
+  padding: 0;
+}
+
+.a42-list-inline > *,
+.a42-list-inline-fancy > * + *::before {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.a42-list-inline > * + * {
+  margin-left: 1em;
+}
+
+.a42-list-inline-fancy > * {
+  position: relative;
+}
+
+.a42-list-inline-fancy > * + *::before {
+  content: '·';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -.9em;
+  width: .5em;
+  text-align: center;
+}
+
+.a42-bgcolor-c1 .a42-list-inline-fancy > * + *::before {
+  color: #e3ebf2;
+}
+
+@media screen and (max-width: 29.9em) {
+  .a42-list-inline-nomobile > * {
+    display: list-item;
+  }
+
+  .a42-list-inline-nomobile > * + *::before {
+    display: none;
+  }
+}
+
+.a42-list-dry > li {
+  margin-bottom: 0;
+}
+
+dt {
+  margin-bottom: 1.5em;
+  font-weight: bold;
+}
+
+dt:first-child {
+  padding-top: 1.5em;
+  border-top: 0;
+}
+
+dd {
+  position: relative;
+  top: 1px;
+  margin-top: -1px;
+  padding-bottom: 1.688rem;
+  border-bottom: 1px solid #CEDAE6;
+}
+
+/* BORDER */
+
+/*[class*="a42-border-t"],
+[class*="a42-border-b"]{
+	position: relative;
+	top: 3px;
+}*/
+
+[class*="a42-border-t"] + *,
+[class*="a42-border-b"] + * {
+  margin-top: 0;
+}
+
+[class*="a42-border-t"] {
+  border-top: .188rem solid;
+}
+
+.a42-border-t {
+  padding-top: 1.5em;
+}
+
+.a42-border-t2 {
+  padding-top: 3em;
+}
+
+[class*="a42-border-b"] {
+  border-bottom: .188rem solid;
+}
+
+.a42-border-b {
+  padding-bottom: 1.5em;
+}
+
+.a42-border-b2,
+.slide .a42-border-b2 {
+  padding-bottom: 3em;
+}
+
+/**
+ * -------------------------
+ * -------------------------
+ * @section TYPO
+ * -------------------------
+ * -------------------------
+ */
+
+/* GENERAL HEADING STYLES */
+
+/* Increase global font-size */
+
+/* désactivé le temps de l'inté du site formation */
+
+/*@media (--xxl-height-notebook){
+
+		body{
+			font-size: 1.063em; 
+		}
+	}*/
+
+/* GENERAL HEADING STYLES */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+[class*="a42-title"] {
+  clear: both;
+  font-family: 'GeoMed', Verdana, sans-serif;
+  font-weight: normal;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6,
+[class*="a42-title"] {
+  margin-top: 1.5rem;
+}
+
+* > h1:first-child,
+* > h2:first-child,
+* > h3:first-child,
+* > h4:first-child,
+* > h5:first-child,
+* > h6:first-child,
+* > [class*="a42-title"]:first-child {
+  margin-top: 0;
+}
+
+h1 + h1,
+.a42-title-maxi + .a42-title-alpha,
+.a42-title-alpha + .a42-title-maxi,
+h1 + h2,
+.a42-title-alpha + .a42-title-beta,
+h2 + h3,
+.a42-title-beta + .a42-title-gamma,
+h3 + h4,
+.a42-title-gamma + .a42-title-delta,
+h4 + h5,
+.a42-title-delta + .a42-title-epsilon,
+h5 + h6,
+.a42-title-epsilon + .a42-title-zeta {
+  margin-top: 0;
+}
+
+h1 kbd,
+h1 code,
+h1 samp,
+h1 var,
+h2 kbd,
+h2 code,
+h2 samp,
+h2 var,
+h3 kbd,
+h3 code,
+h3 samp,
+h3 var,
+h4 kbd,
+h4 code,
+h4 samp,
+h4 var,
+h5 kbd,
+h5 code,
+h5 samp,
+h5 var,
+h6 kbd,
+h6 code,
+h6 samp,
+h6 var,
+a kbd,
+a code,
+a samp,
+a var,
+[class*="a42-title"] kbd,
+[class*="a42-title"] code,
+[class*="a42-title"] samp,
+[class*="a42-title"] var {
+  background: none;
+  padding-right: 0;
+  padding-left: 0;
+  font-family: inherit;
+}
+
+/* INDIVIDUAL HEADING STYLES */
+
+h1 {
+  margin-bottom: 1.5rem;
+  /* overwrite normalize */
+}
+
+h1,
+.a42-title-alpha {
+  font-size: 1.625em;
+  /* 26px */
+  line-height: 1.154;
+  /* 30px */
+  color: #0B1B34;
+}
+
+@media screen and (min-width:40em) and (max-width: 61.24em) {
+  h1,
+  .a42-title-alpha {
+    font-size: 2em;
+    /* 32px */
+    line-height: 1.125;
+    /* 36px */
+  }
+}
+
+@media screen and (min-width: 61.25em) {
+  h1,
+  .a42-title-alpha {
+    font-size: 3em;
+    /* 48px */
+    line-height: 1;
+    /* 48px */
+  }
+}
+
+.a42-title-maxi {
+  font-size: 2.25em;
+  /* 36px */
+  line-height: 1;
+  /* 36px */
+  color: #0B1B34;
+}
+
+@media screen and (min-width:40em) and (max-width: 61.24em) {
+  h1,
+  .a42-title-maxi {
+    font-size: 3em;
+    /* 48px */
+    line-height: 1;
+    /* 48px */
+  }
+}
+
+@media screen and (min-width: 61.25em) {
+  .a42-title-maxi {
+    font-size: 4.375em;
+    /* 70px */
+    line-height: 1.029;
+    /* 72px */
+  }
+}
+
+@media screen and (min-width: 61.25em) and (max-height: 49.99em) {
+  .a42-title-maxi {
+    font-size: 3.750em;
+    /* 60px */
+  }
+}
+
+.a42-modal h1 {
+  color: #0B1B34;
+}
+
+h2,
+.a42-title-beta {
+  font-size: 1.5em;
+  /* 24px */
+  line-height: 1.25;
+  /* 30px */
+  color: #31486e;
+}
+
+@media screen and (min-width:40em) and (max-width: 61.24em) {
+  h2,
+  .a42-title-beta {
+    font-size: 1.75em;
+    /* 28px */
+    line-height: 1.286;
+    /* 36px */
+  }
+}
+
+@media screen and (min-width: 61.25em) {
+  h2,
+  .a42-title-beta {
+    font-size: 2.563em;
+    /* 41px */
+    line-height: 1.171;
+    /* 48px */
+  }
+}
+
+h3,
+.a42-title-gamma {
+  font-size: 1.375em;
+  /* 22px */
+  line-height: 1.364;
+  /* 30px */
+  font-family: 'GeoBook', Verdana, sans-serif;
+  font-weight: normal;
+  color: #343643;
+}
+
+@media screen and (min-width:40em) and (max-width: 61.24em) {
+  h3,
+  .a42-title-gamma {
+    font-size: 1.5em;
+    /* 24px */
+    line-height: 1.25;
+    /* 30px */
+  }
+}
+
+@media screen and (min-width: 61.25em) {
+  h3,
+  .a42-title-gamma {
+    font-size: 2em;
+    /* 32px */
+    line-height: 1.125;
+    /* 36px */
+  }
+}
+
+h4,
+.a42-title-delta {
+  font-size: 1.25em;
+  /* 20px */
+  line-height: 1.2;
+  /* 24px */
+  color: #962E3F;
+  font-family: 'GeoBook', Verdana, sans-serif;
+}
+
+@media screen and (min-width:40em) and (max-width: 61.24em) {
+  h4,
+  .a42-title-delta {
+    font-size: 1.375em;
+    /* 22px */
+    line-height: 1.364;
+    /* 30px */
+  }
+}
+
+@media screen and (min-width: 61.25em) {
+  h4,
+  .a42-title-delta {
+    font-size: 1.750em;
+    /* 28px */
+    line-height: 1.286;
+    /* 36px */
+  }
+}
+
+h5,
+.a42-title-epsilon {
+  font-size: 1.125em;
+  /* 18px */
+  line-height: 1.333;
+  /* 24px */
+  color: #0B1B34;
+  font-family: 'GeoMed', Verdana, sans-serif;
+}
+
+@media screen and (min-width:40em) and (max-width: 61.24em) {
+  h5,
+  .a42-title-epsilon {
+    font-size: 1.25em;
+    /* 20px */
+    line-height: 1.2;
+    /* 24px */
+  }
+}
+
+@media screen and (min-width: 61.25em) {
+  h5,
+  .a42-title-epsilon {
+    font-size: 1.563em;
+    /* 25px */
+    line-height: 1.2;
+    /* 30px */
+  }
+}
+
+h6,
+.a42-title-zeta {
+  font-size: 1.063em;
+  /* 17px */
+  line-height: 1.412;
+  /* 24px */
+  color: #31486e;
+  font-family: 'GeoMed', Verdana, sans-serif;
+}
+
+@media screen and (min-width:40em) and (max-width: 61.24em) {
+  h6,
+  .a42-title-zeta {
+    font-size: 1.188em;
+    /* 19px */
+    line-height: 1.263;
+    /* 24px */
+  }
+}
+
+@media screen and (min-width: 61.25em) {
+  h6,
+  .a42-title-zeta {
+    font-size: 1.375em;
+    /* 22px */
+    line-height: 1.091;
+    /* 24px */
+  }
+}
+
+/*@media(--until-small)
+	{
+		h1, .a42-title-alpha{
+			font-size: 1.750em;
+		}
+
+		h2, .a42-title-beta,
+		.a42-modal h1{
+			font-size: 1.625em;
+		}
+
+		h3, .a42-title-gamma,
+		.a42-title-site{
+			font-size: 1.5em;
+		}
+
+		h4, .a42-title-delta{
+			font-size: 1.375em;
+		}
+
+		h5, .a42-title-epsilon{
+			font-size: 1.25em; 
+		}
+
+		h6, .a42-title-zeta{
+			font-size: 1.125em;
+		}
+	}*/
+
+/* TEXT SIZE HELPERS */
+
+.a42-text-great {
+  font-size: 1.15em;
+  line-height: 1.333;
+  font-family: 'GeoBook', Verdana, sans-serif;
+}
+
+.a42-main-intro_desc.a42-text-great {
+  max-width: 34.348em;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.a42-main-intro_desc.a42-text-great,
+.a42-main-intro_desc.a42-text-great * {
+  margin-bottom: 1.043em;
+}
+
+.a42-main-intro_desc.a42-text-great *:last-child {
+  margin-bottom: 0;
+}
+
+@media screen and (min-width: 61.25em) {
+  .a42-text-great {
+    font-size: 1.25em;
+  }
+
+  .a42-main-intro_desc .a42-text-great,
+  .a42-main-intro_desc.a42-text-great {
+    font-size: 1.438em;
+    max-width: 70ch;
+  }
+}
+
+/* Focus */
+
+@media screen and (min-width: 40em) {
+  .a42-text-focus {
+    font-size: 1.125em;
+    line-height: 1.34;
+    margin-bottom: 1.33333em;
+  }
+}
+
+/* Important */
+
+.a42-text-important {
+  font-family: 'GeoBook', Verdana, sans-serif;
+}
+
+@media screen and (min-width:40em) and (max-width: 61.24em) {
+  .a42-text-important {
+    font-size: 1.125em;
+    /* 18px */
+    line-height: 1.333;
+    /* 24px */
+  }
+}
+
+@media screen and (min-width: 61.25em) {
+  .a42-text-important {
+    font-size: 1.375em;
+    /* 22px */
+    line-height: 1.364;
+    /* 30px */
+  }
+}
+
+/* Emphasis*/
+
+.a42-text-important p:first-child {
+  font-family: 'GeoMed', Verdana, sans-serif;
+}
+
+/* Small (strength: -1) */
+
+.a42-text-small {
+  font-size: .9em;
+}
+
+/* Tiny (strength: -2) */
+
+.a42-text-tiny,
+.a42-form .mandatory {
+  font-size: .8em;
+}
+
+/* Micro (strength: -3) */
+
+.a42-text-micro {
+  font-size: .7em;
+}
+
+/* Reset */
+
+.a42-text-reset {
+  max-width: none;
+  font-size: inherit;
+  line-height: inherit;
+  margin-bottom: inherit;
+}
+
+/**
+ * -------------------------
+ * -------------------------
+ * @section LAYOUT
+ * -------------------------
+ * -------------------------
+ */
+
+body > *,
+.a42-wrapper > * {
+  margin-bottom: 0;
+  overflow:hidden
+}
+
+
+/* SIMPLE, CENTERED CONTAINER */
+
+.a42-container {
+  max-width: 60em;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 0;
+  padding-right: .625em;
+  /* 10px */
+  padding-left: .625em;
+  /* 10px */
+  width:800px;
+}
+
+/* Ajout depuis AccessConfig – 02/01/2019 */
+
+.a42-block > .a42-container {
+  padding-top: 1em;
+  padding-bottom: 1em;
+  position: relative;
+  z-index: 1;
+}
+
+@media screen and (min-width: 61.25em) {
+  .a42-block > .a42-container {
+    padding-top: 2.5em;
+    padding-bottom: 2.5em;
+  }
+}
+
+@media screen and (min-width: 80em) {
+  .a42-block > .a42-container {
+    padding-top: 3.5em;
+    padding-bottom: 3.5em;
+  }
+}
+
+/* 2 COLS LAYOUT */
+
+.a42-layout-alpha {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.a42-layout-alpha > * {
+  -ms-flex: auto;
+  flex: auto;
+}
+
+@media screen and (min-width: 61.25em) {
+  .a42-layout-alpha > * {
+    width: 50%;
+  }
+}
+
+/* */
+
+.a42-ac-cancel-justification .a42-main-tools_beta,
+.a42-ac-cancel-justification .a42-main-tools_beta * {
+  text-align: left !important;
+}
+
+.a42-ac-cancel-justification .a42-main-tools_alpha,
+.a42-ac-cancel-justification .a42-main-tools_alpha * {
+  text-align: right !important;
+}
+
+/* SIDEBAR + CONTENT */
+
+.a42-page-sidebar,
+.a42-page-content {
+  margin-bottom: 0;
+  padding-bottom: 1.5em;
+}
+
+@media screen and (min-width: 61.25em) {
+  .a42-page-sidebar {
+    position: relative;
+    z-index: 1;
+    float: left;
+    width: 31.91%;
+    /* 300px/18.75em – we cannot use em here because of a Firefox bug */
+    padding-right: 2.5em;
+    margin-top: 3.75em;
+    padding-bottom: 3em;
+  }
+
+  .a42-page-sidebar::before {
+    right: -.188rem;
+  }
+}
+
+@media screen and (max-height: 49.99em) {
+  .a42-page-sidebar h5,
+  .a42-page-sidebar .a42-title-epsilon {
+    margin-bottom: .480em;
+    /* 12px */
+  }
+}
+
+.a42-page-content {
+  padding-bottom: 4em;
+}
+
+.a42-page-content h1,
+.a42-page-content .a42-title-alpha,
+.a42-page-content .a42-title-maxi,
+.a42-page-content h2,
+.a42-page-content .a42-title-beta,
+.a42-page-content h3,
+.a42-page-content .a42-title-gamma,
+.a42-page-content h4,
+.a42-page-content .a42-title-delta,
+.a42-page-content h5,
+.a42-page-content .a42-title-epsilon,
+.a42-page-content h6,
+.a42-page-content .a42-title-zeta {
+  padding-top: 1.5rem;
+  /* prettier anchors */
+}
+
+@media screen and (min-width: 61.25em) {
+  .a42-page-content {
+    position: relative;
+    padding-left: 3.125em;
+  }
+
+  .a42-page-sidebar + .a42-page-content {
+    float: left;
+    width: 68.09%;
+    /* 640px/40em – we cannot use em here because of a Firefox bug */
+  }
+
+  .a42-page-content::before {
+    left: 0;
+  }
+
+  .a42-page-sidebar::before,
+  .a42-page-content::before {
+    content: '';
+    position: absolute;
+    top: -6em;
+    width: .188rem;
+    height: calc(100% + 10em);
+  }
+
+  .a42-main-container .a42-container + .a42-container .a42-page-sidebar::before,
+  .a42-main-container .a42-container + .a42-container .a42-page-content::before {
+    top: -18em;
+    height: calc(100% + 18em);
+  }
+
+  .a42-page-content h2 {
+    position: relative;
+  }
+
+  .a42-page-content h2::before {
+    content: '';
+    position: absolute;
+    top: 1.171em;
+    left: -3.125rem;
+    width: 1.125rem;
+    height: .188rem;
+  }
+
+  /* Colors */
+
+  .a42-page-sidebar::before,
+  .a42-page-content::before,
+  .a42-page-content h2::before {
+    background-color: #e3ebf2;
+  }
+
+  .a42-ac-high-contrast .a42-page-sidebar::before,
+  .a42-ac-high-contrast .a42-page-content::before,
+  .a42-ac-high-contrast .a42-page-content h2::before {
+    background-color: #fff !important;
+  }
+
+  .a42-ac-inv-contrast .a42-page-sidebar::before,
+  .a42-ac-inv-contrast .a42-page-content::before,
+  .a42-ac-inv-contrast .a42-page-content h2::before {
+    background-color: #FF0 !important;
+  }
+}
+
+/* PAGE FOOTER */
+
+.a42-page-footer {
+  padding-top: 3em;
+  padding-bottom: 3em;
+  border-top: .188rem solid #e3ebf2;
+  border-bottom: .188rem solid #e3ebf2;
+}
+
+.a42-main-container > .a42-container:last-child .a42-page-footer {
+  padding-bottom: 0;
+  border-bottom: 0;
+  min-height: 4em;
+}
+
+@media screen and (min-width: 61.25em) {
+  .a42-page-footer {
+    position: relative;
+    clear: both;
+    z-index: 2;
+    background-color: #f9fcff;
+  }
+
+  .a42-page-footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: .188rem;
+    height: 100%;
+    background-color: #e3ebf2;
+  }
+
+  .a42-ac-inv-contrast .a42-page-footer::before {
+    background-color: #FF0 !important;
+  }
+
+  .a42-main-container > .a42-container:last-child .a42-page-footer::before {
+    height: calc(100% + 6em);
+  }
+}
+
+/**
+ * -------------------------
+ * -------------------------
+ * @section HEADER
+ * -------------------------
+ * -------------------------
+ */
+
+/* HEADER GENERAL */
+
+.a42-main-header {
+  position: relative;
+  z-index: 2;
+  margin-bottom: 4em;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+}
+
+@media screen and (min-width: 61.25em) and (min-height: 50em) {
+  .a42-main-header {
+    margin-bottom: 6em;
+    padding-top: 2.5em;
+    padding-bottom: 2.5em;
+  }
+}
+
+@media screen and (max-height: 34.99em) {
+  .a42-main-header {
+    padding-top: .75em;
+    padding-bottom: 1.25em;
+  }
+}
+
+.a42-main-header .a42-logo {
+  width: 4.188rem;
+  /* 67px */
+  height: 3rem;
+  /* 48px */
+}
+
+.a42-main-header > * {
+  color: #fff;
+}
+
+.a42-main-header input,
+.a42-main-header textarea,
+.a42-main-header select {
+  color: #0B1B34;
+}
+
+.a42-main-header * {
+  color: inherit;
+}
+
+/* Header diagonal pseudo-element */
+
+/*.a42-main-header::before {*/
+/*  content: '';*/
+/*  position: absolute;*/
+/*  right: 0;*/
+/*  bottom: -1.75rem;*/
+/*  left: 0;*/
+/*  background-color: inherit;*/
+/*  width: 100%;*/
+/*  height: 5em;*/
+/*  transform: skew(0deg,-1.2deg);*/
+/*  z-index: -1;*/
+/*}*/
+
+/* HEADER INTRO */
+
+
+.a42-main-intro_desc {
+  font-family: 'GeoBook', Verdana, sans-serif;
+}
+
+.a42-main-intro *:last-child {
+  margin-bottom: 0;
+}
+
+.a42-main-intro .a42-picto-container {
+  margin-top: -1em;
+  display: none;
+}
+
+.a42-main-intro .a42-picto-container * {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* HEADER TOOLS */
+
+.a42-main-tools {
+  margin-bottom: 2em;
+  /* 24px */
+}
+
+.a42-main-tools * {
+  margin-bottom: 0;
+}
+
+.a42-main-tools a,
+.a42-main-tools button {
+  display: inline-block;
+  vertical-align: top;
+}
+
+@media screen and (max-width: 61.24em) {
+  /* On étand la zone de clic sur mobile et tablette */
+
+  .a42-main-tools a,
+  .a42-main-tools button {
+    padding-top: .5em;
+    padding-bottom: .5em;
+  }
+
+  .a42-main-tools .a42-list-inline-fancy > * + *::before {
+    line-height: 2.714em;
+    /* 24px + .5em + .5em */
+  }
+}
+
+@media screen and (max-width: 29.9em) {
+  .a42-main-tools .a42-help.a42-list-inline > * {
+    display: block;
+  }
+
+  .a42-main-tools .a42-help.a42-list-inline-fancy > * + *::before {
+    display: none;
+  }
+
+  /* On étand la zone de clic sur mobile et tablette */
+
+  .a42-main-tools a,
+  .a42-main-tools button {
+    padding-top: .25em;
+    padding-bottom: .25em;
+  }
+
+  .a42-main-tools .a42-help > li:first-child a,
+  .a42-main-tools .a42-help > li:first-child button {
+    padding-top: 0;
+  }
+}
+
+.a42-main-tools button:focus,
+.a42-main-tools button:hover {
+  opacity: .6;
+}
+
+.a42-main-tools_alpha {
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+.a42-main-tools_alpha:not(:only-child) {
+  text-align: right;
+}
+
+.a42-help {
+  font-size: 0.875em;
+  line-height: 1.714em;
+}
+
+.a42-help li {
+  margin-bottom: 0;
+}
+
+/**
+ * -------------------------
+ * -------------------------
+ * @section CONTENT
+ * -------------------------
+ * -------------------------
+ */
+
+.a42-main-container {
+  position: relative;
+  z-index: 1;
+}
+
+.a42-main-container .a42-container + .a42-container {
+  margin-top: 3em;
+}
+
+/* ne pas cibler a42-btn ici pour que ce style soit compatible avec les boutons LimeSurvey */
+
+.a42-page-content a:not([class*="btn"]) {
+  color: #962E3F;
+}
+
+.a42-page-content > section:first-child h2 {
+  padding-top: 0;
+}
+
+.a42-page-content .a42-picto {
+  width: 100%;
+  width: 6.875rem;
+  /* 110px */
+  height: 6.875rem;
+  /* 110px */
+}
+
+.a42-address *:last-child {
+  margin-bottom: 0;
+}
+
+.a42-signatures,
+.a42-signatures_content,
+.a42-signature_title {
+  margin-bottom: 0;
+}
+
+ul.a42-signatures_content {
+  list-style: none;
+  padding-left: 0;
+}
+
+/* LINKS */
+
+.a42-link-block {
+  display: block;
+  border-bottom: 0;
+  text-decoration: none;
+}
+
+p .a42-link-block {
+  margin-top: 1em;
+}
+
+.a42-link-block--img:focus,
+.a42-link-block--img:hover,
+.a42-link-block--img:active {
+  opacity: .6;
+}
+
+/* ASSETS */
+
+.a42-img-block {
+  display: block;
+}
+
+p .a42-img-block {
+  margin-top: 1em;
+}
+
+/* USER CHOICES */
+
+.a42-user-choices {
+  text-align: center;
+}
+
+.a42-user-choices * {
+  max-width: none;
+}
+
+.a42-user-choices_list [class*="a42-btn"] {
+  width: 100%;
+  max-width: 16.875em;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media screen and (min-width: 61.25em) {
+  .a42-user-choices_list li {
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  .a42-user-choices_list > li + li {
+    margin-left: 3.125em;
+  }
+
+  .a42-user-choices_list > li:nth-last-child(-n+3) {
+    margin-bottom: 0;
+  }
+
+  .a42-user-choices_list [class*="a42-btn"] {
+    max-width: none;
+  }
+
+  /* Fixed width */
+
+  .a42-user-choices-fixed .a42-btn-skeleton {
+    width: 14.375em;
+  }
+
+  .a42-user-choices-fixed .a42-btn-skeleton--focus {
+    width: 19.375em;
+  }
+}
+
+
+
+
+/**
+ * -------------------------
+ * -------------------------
+ * @section FORMS
+ * -------------------------
+ * -------------------------
+ */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  line-height: 1.5;
+  border-radius: 0;
+  /* kill iOS styles */
+}
+
+button,
+input[type="button"],
+[type="submit"] {
+  /*transition: opacity .25s;*/
+  transition: border-color .25s,background-color .25s,opacity .25s;
+}
+
+button,
+input[type="button"],
+.a42-btn {
+  display: inline-block;
+  vertical-align: top;
+  margin-bottom: 0;
+  background: none;
+  border: 0;
+  padding: 0;
+  font-size: inherit;
+  line-height: inherit;
+  font-family: inherit;
+  text-decoration: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  color: inherit;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+  text-align: inherit;
+}
+
+/* INPUT type range */
+
+input[type="range"] {
+  border: 0;
+}
+
+/*input[type="range"]::-webkit-slider-runnable-track {}
+input[type="range"]::-moz-range-track {}
+input[type="range"]::-moz-range-thumb {}
+input[type="range"]::-ms-fill-lower {}
+input[type="range"]::-ms-fill-upper {}
+input[type="range"]:focus::-ms-fill-lower {}
+input[type="range"]:focus::-ms-fill-upper {}
+input[type="range"]::-ms-thumb {}*/
+
+/* INPUT type date */
+
+*::-webkit-datetime-edit-text {
+  color: inherit;
+}
+
+*::-webkit-datetime-edit-month-field {
+  color: inherit;
+}
+
+*::-webkit-datetime-edit-day-field {
+  color: inherit;
+}
+
+*::-webkit-datetime-edit-year-field {
+  color: inherit;
+}
+
+/*::-webkit-calendar-picker-indicator {}*/
+
+/* BUTTONS */
+
+.a42-btn_title,
+.a42-btn_meta {
+  display: block;
+}
+
+.a42-btn_title {
+  font-family: 'GeoMed', Verdana, sans-serif;
+}
+
+@media screen and (min-width: 61.25em) {
+  .a42-btn_title {
+    font-size: 1.250em;
+  }
+}
+
+.a42-btn_meta {
+  font-size: .938em;
+}
+
+/* SUBMIT BUTTONS */
+
+[type="submit"] {
+  background-color: #962E3F;
+  color: #fff;
+  border: 1px solid #962E3F;
+  font-weight: bold;
+  padding: .5em 1em;
+}
+
+[type="submit"]:focus,
+[type="submit"]:hover,
+[type="submit"]:active {
+  background-color: #e3ebf2;
+  color: #0B1B34;
+  border-color: #e3ebf2;
+}
+
+/* FLEX BUTTON */
+
+/* Flex center even in IE11: https://codepen.io/philipwalton/pen/JdvdJE */
+
+/* The Flex property cannot be applied to the `button` tag, hence the many `span` tags. */
+
+.a42-btn-flex {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.a42-btn-flex_content {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: .375em;
+  margin-bottom: .375em;
+  padding: .5em 1.875em;
+}
+
+@media screen and (min-width: 61.25em) {
+  .a42-btn-flex_content {
+    min-height: 5.250em;
+  }
+}
+
+.a42-btn-flex_child {
+  max-width: 100%;
+}
+
+/* SKELETON BUTTON */
+
+.a42-btn-skeleton,
+.a42-btn-skeleton:focus,
+.a42-btn-skeleton:hover,
+.a42-btn-skeleton:active {
+  border: .188rem solid #7d829a;
+}
+
+.a42-btn-skeleton:focus,
+.a42-btn-skeleton:hover,
+.a42-btn-skeleton:active {
+  background-color: #0B1B34;
+  color: #fff;
+}
+
+/* White border on dark backgrounds */
+
+.a42-bgcolor-c1 .a42-btn-skeleton,
+.a42-bgcolor-c3 .a42-btn-skeleton,
+.a42-bgcolor-c5 .a42-btn-skeleton,
+.a42-bgcolor-c8 .a42-btn-skeleton,
+.a42-bgcolor-c9 .a42-btn-skeleton {
+  border-color: inherit;
+}
+
+/* Using the  `*=` selector to match both .a42-btn-skeleton and .a42-btn-skeleton--focus elements */
+
+.a42-bgcolor-c1 [class*="a42-btn-skeleton"]:focus,
+.a42-bgcolor-c1 [class*="a42-btn-skeleton"]:hover,
+.a42-bgcolor-c1 [class*="a42-btn-skeleton"]:active,
+.a42-bgcolor-c3 [class*="a42-btn-skeleton"]:focus,
+.a42-bgcolor-c3 [class*="a42-btn-skeleton"]:hover,
+.a42-bgcolor-c3 [class*="a42-btn-skeleton"]:active,
+.a42-bgcolor-c5 [class*="a42-btn-skeleton"]:focus,
+.a42-bgcolor-c5 [class*="a42-btn-skeleton"]:hover,
+.a42-bgcolor-c5 [class*="a42-btn-skeleton"]:active,
+.a42-bgcolor-c8 [class*="a42-btn-skeleton"]:focus,
+.a42-bgcolor-c8 [class*="a42-btn-skeleton"]:hover,
+.a42-bgcolor-c8 [class*="a42-btn-skeleton"]:active,
+.a42-bgcolor-c9 [class*="a42-btn-skeleton"]:focus,
+.a42-bgcolor-c9 [class*="a42-btn-skeleton"]:hover,
+.a42-bgcolor-c9 [class*="a42-btn-skeleton"]:active {
+  background-color: #0B1B34;
+  border-color: #fff;
+  color: #fff;
+}
+
+/* Exception for c1 backgrounds */
+
+.a42-bgcolor-c1 [class*="a42-btn-skeleton"]:focus,
+.a42-bgcolor-c1 [class*="a42-btn-skeleton"]:hover,
+.a42-bgcolor-c1 [class*="a42-btn-skeleton"]:active {
+  background-color: #081426;
+}
+
+/* FOCUS BUTTON for tools */
+
+/* Blue by default */
+
+.a42-btn-skeleton--focus {
+  border: .188rem solid #5874a1;
+  /* .188rem = 3px */
+  background-color: #31486e;
+  color: #fff;
+}
+
+.a42-btn-skeleton--focus:focus,
+.a42-btn-skeleton--focus:hover,
+.a42-btn-skeleton--focus:active {
+  border: .188rem solid #7d829a;
+  background-color: #0B1B34;
+  color: #fff;
+}
+
+/* Turns yellow when used in some contexts */
+
+.a42-bgcolor-c1 .a42-btn-skeleton--focus,
+.a42-bgcolor-c2 .a42-btn-skeleton--focus,
+.a42-bgcolor-c3 .a42-btn-skeleton--focus,
+.a42-bgcolor-c5 .a42-btn-skeleton--focus,
+.a42-bgcolor-c8 .a42-btn-skeleton--focus,
+.a42-bgcolor-c9 .a42-btn-skeleton--focus {
+  background-color: #F2EBC7;
+  border-color: rgb(194, 188, 159);
+  color: #0B1B34;
+}
+
+/*.a42-bgcolor-c1 .a42-btn-skeleton--focus:focus,
+	.a42-bgcolor-c1 .a42-btn-skeleton--focus:hover,
+	.a42-bgcolor-c1 .a42-btn-skeleton--focus:active{
+		background-color: #081426;
+		border-color: inherit;
+		color: inherit;
+	}*/
+
+/* ALPHA BUTTON */
+
+.a42-btn-alpha-container {
+  padding-bottom: .75em;
+  /* pour compenser la hauteur 60px des boutons alpha */
+}
+
+.a42-btn-alpha {
+  font-size: 1.125em;
+  /* 18px */
+  line-height: 1.333;
+  /* 24px */
+  padding: .5em;
+  background-color: #31486e;
+  color: #fff;
+  font-family: 'GeoMed', Verdana, sans-serif;
+  border: 1px solid #31486e;
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+@media screen and (min-width: 40em) {
+  .a42-btn-alpha {
+    padding: 0.810em;
+    /* 18px - 1px border = 17px */
+    font-size: 1.313em;
+    /* 21px */
+    line-height: 1.143em;
+    /* 24px */
+  }
+}
+
+.a42-btn-alpha:focus,
+.a42-btn-alpha:hover,
+.a42-btn-alpha:active {
+  background-color: #F2EBC7;
+  color: #0B1B34;
+  border-color: #F2EBC7;
+}
+
+.a42-btn-alpha--shy {
+  font-size: 1.188em;
+  /* 19px */
+  line-height: 1.263;
+  /* 24px */
+  padding: .632em;
+  /* 12px */
+}
+
+@media screen and (max-width: 29.9em) {
+  .a42-btn-alpha--block {
+    display: block;
+    text-align: center;
+    max-width: 16.875rem;
+    /* 270px */
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+/* Ajout depuis AccessConfig – 02/01/2020 */
+
+@media screen and (max-width: 19.9em) {
+  .a42-btn-alpha--block {
+    text-align: left;
+  }
+}
+
+/**/
+
+@media screen and (min-width: 30em) {
+  .a42-btn-alpha--equalize {
+    min-width: 16.875rem;
+    /* 270px */
+  }
+}
+
+@media screen and (min-width: 40em) {
+  .a42-btn-alpha--equalize {
+    min-width: 19.6875rem;
+    /* 315px */
+  }
+}
+
+.a42-btn-alpha--shrink {
+  padding-top: .667em;
+  /* 12px */
+  padding-bottom: .667em;
+  /* 12px */
+}
+
+@media screen and (min-width: 40em) {
+  .a42-btn-alpha--shrink {
+    padding-top: .571em;
+    /* 12px */
+    padding-bottom: .571em;
+    /* 12px */
+  }
+}
+
+/* Turns yellow when used in some contextes */
+
+.a42-bgcolor-c1 .a42-btn-alpha,
+.a42-bgcolor-c2 .a42-btn-alpha,
+.a42-bgcolor-c5 .a42-btn-alpha,
+.a42-bgcolor-c8 .a42-btn-alpha,
+.a42-bgcolor-c9 .a42-btn-alpha {
+  background-color: #F2EBC7;
+  color: #0B1B34;
+  border-color: #F2EBC7;
+}
+
+.a42-bgcolor-c5 .a42-btn-alpha:focus,
+.a42-bgcolor-c5 .a42-btn-alpha:hover,
+.a42-bgcolor-c5 .a42-btn-alpha:active,
+.a42-bgcolor-c8 .a42-btn-alpha:focus,
+.a42-bgcolor-c8 .a42-btn-alpha:hover,
+.a42-bgcolor-c8 .a42-btn-alpha:active,
+.a42-bgcolor-c9 .a42-btn-alpha:focus,
+.a42-bgcolor-c9 .a42-btn-alpha:hover,
+.a42-bgcolor-c9 .a42-btn-alpha:active {
+  background-color: #0B1B34;
+  color: #fff;
+  border-color: #0B1B34;
+}
+
+.a42-bgcolor-c1 .a42-btn-alpha:focus,
+.a42-bgcolor-c1 .a42-btn-alpha:hover,
+.a42-bgcolor-c1 .a42-btn-alpha:active,
+.a42-bgcolor-c2 .a42-btn-alpha:focus,
+.a42-bgcolor-c2 .a42-btn-alpha:hover,
+.a42-bgcolor-c2 .a42-btn-alpha:active {
+  background-color: #31486e;
+  color: #fff;
+  border-color: #31486e;
+}
+
+/* Turns dark grey when used in some contextes */
+
+.a42-bgcolor-c3 .a42-btn-alpha {
+  background-color: #0B1B34;
+}
+
+.a42-bgcolor-c3 .a42-btn-alpha:focus,
+.a42-bgcolor-c3 .a42-btn-alpha:hover,
+.a42-bgcolor-c3 .a42-btn-alpha:active {
+  background-color: #F2EBC7;
+  color: #0B1B34;
+  border-color: #F2EBC7;
+}
+
+/* ALPHA FOCUS BUTTON */
+
+.a42-btn-alpha--focus {
+  background-color: #F2EBC7;
+  color: #0B1B34;
+  border-color: #F2EBC7;
+}
+
+.a42-btn-alpha--focus:focus,
+.a42-btn-alpha--focus:hover,
+.a42-btn-alpha--focus:active {
+  background-color: #31486e;
+  color: #fff;
+  border-color: #31486e;
+}
+
+/* ALPHA WARNING BUTTON */
+
+.a42-btn-alpha--warning {
+  background-color: #962E3F;
+  color: #fff;
+  border-color: #962E3F;
+}
+
+.a42-btn-alpha--warning:focus,
+.a42-btn-alpha--warning:hover,
+.a42-btn-alpha--warning:active {
+  background-color: #CEDAE6;
+  color: #0B1B34;
+  border-color: #CEDAE6;
+}
+
+/* ALPHA GHOST BUTTON */
+
+.a42-btn-alpha--ghost {
+  background-color: #e3ebf2;
+  color: #0B1B34;
+  border-color: #e3ebf2;
+}
+
+.a42-btn-alpha--ghost:focus,
+.a42-btn-alpha--ghost:hover,
+.a42-btn-alpha--ghost:active {
+  background-color: #31486e;
+  color: #fff;
+  border-color: #31486e;
+}
+
+/* Ajout depuis AccessConfig – 02/01/2020 */
+
+/* @todo px => em */
+
+@media screen and (min-width:30em) and (max-width: 49.99em) {
+  .a42-btn-alpha--block {
+    max-width: 320px;
+  }
+}
+
+/* RAW BUTTON */
+
+.a42-btn-raw {
+  font-size: 1.125em;
+  /* 18px */
+  line-height: 1.34;
+  /* 24/18 */
+  font-family: 'GeoBook', Verdana, sans-serif;
+}
+
+@media screen and (min-width: 40em) {
+  .a42-btn-raw {
+    font-size: 1.313em;
+    /* 21px */
+    line-height: 1.143;
+    /* 24/21 */
+    font-family: 'GeoMed', Verdana, sans-serif;
+  }
+
+  .a42-btn-raw--light {
+    font-family: 'GeoBook', Verdana, sans-serif;
+  }
+}
+
+.a42-btn-raw_in {
+  border-bottom: 1px solid;
+  transition: border-color .25s, background-color .25s, opacity .25s;
+}
+
+@media screen and (min-width: 40em) {
+  .a42-btn-raw:not(.a42-btn-raw--light) .a42-btn-raw_in {
+    border-bottom-width: 2px;
+  }
+}
+
+.a42-btn-raw:focus .a42-btn-raw_in,
+.a42-btn-raw:hover .a42-btn-raw_in,
+.a42-btn-raw:active .a42-btn-raw_in {
+  border-bottom-color: transparent;
+}
+
+/* COMMON BUTTON STYLES */
+
+[class~="a42-btn"] {
+  transition: border-color .25s, background-color .25s, opacity .25s;
+}
+
+[class*="a42-btn"]:not([class*="-container"]) * {
+  margin: 0;
+}
+
+/* Enforced contrast */
+
+.a42-ac-high-contrast [class~="a42-btn"]:focus,
+.a42-ac-high-contrast [class~="a42-btn"]:hover,
+.a42-ac-high-contrast [class~="a42-btn"]:active {
+  background-color: #fff !important;
+  color: #252830 !important;
+}
+
+.a42-ac-high-contrast [class~="a42-btn"] * {
+  background: none !important;
+}
+
+.a42-ac-high-contrast [class~="a42-btn"]:focus *,
+.a42-ac-high-contrast [class~="a42-btn"]:hover *,
+.a42-ac-high-contrast [class~="a42-btn"]:active * {
+  color: #252830 !important;
+}
+
+/* Inverted contrast */
+
+.a42-ac-inv-contrast [class~="a42-btn"]:focus,
+.a42-ac-inv-contrast [class~="a42-btn"]:hover,
+.a42-ac-inv-contrast [class~="a42-btn"]:active {
+  background-color: #FFFF00 !important;
+  color: #000080 !important;
+}
+
+.a42-ac-inv-contrast [class~="a42-btn"] * {
+  background: none !important;
+}
+
+.a42-ac-inv-contrast [class~="a42-btn"]:focus *,
+.a42-ac-inv-contrast [class~="a42-btn"]:hover *,
+.a42-ac-inv-contrast [class~="a42-btn"]:active * {
+  color: #000080 !important;
+}
+
+/* INPUT */
+
+input {
+  padding: 0;
+  border: 1px solid #7d829a;
+}
+
+input:focus {
+  border-color: #31486e;
+}
+
+input[type="search"] {
+  box-sizing: border-box;
+  /* like every element */
+}
+
+input[type="email"],
+input[type="text"],
+input[type="search"],
+input[type="password"],
+input[type="tel"],
+input[type="number"],
+textarea {
+  padding: .25em;
+}
+
+/* FIELDSET + LEGEND */
+
+fieldset {
+  margin: 0 0 1.5em;
+  padding: 0;
+  border: 0;
+}
+
+.a42-fieldset-big {
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+}
+
+p + fieldset,
+fieldset + fieldset {
+  margin-top: 1.5em;
+}
+
+fieldset > ul,
+fieldset > ol {
+  padding-left: 0;
+  list-style: none;
+}
+
+fieldset li {
+  margin-bottom: .5em;
+}
+
+@media screen and (min-width: 40em) {
+  fieldset {
+    margin-bottom: 3em;
+    padding-left: 1.875rem;
+    /* 30px */
+    border-width: 0 0 0 10px;
+    border-style: solid;
+    border-left-color: #e3ebf2;
+  }
+
+  p + fieldset,
+  fieldset + fieldset {
+    margin-top: 3em;
+  }
+
+  fieldset fieldset {
+    border-left: 0;
+    padding-left: 0;
+  }
+}
+
+legend {
+  float: left;
+  width: 100%;
+  margin: 0;
+  padding-bottom: .5em;
+  color: #0B1B34;
+  font-weight: bold;
+}
+
+@media screen and (min-width: 40em) {
+  legend {
+    font-size: 1.125em;
+    font-family: 'GeoMed', Verdana, sans-serif;
+    font-weight: normal;
+  }
+}
+
+@media screen and (min-width: 50em) {
+  legend {
+    font-size: 1.375rem;
+  }
+}
+
+/* TEXTAREA */
+
+textarea {
+  display: block;
+  width: 100%;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: 1px solid #7d829a;
+  border-radius: 0;
+  padding: .5em;
+}
+
+textarea:focus {
+  border-color: #0B1B34;
+}
+
+label + textarea {
+  margin-top: .5em;
+}
+
+/* SELECT */
+
+select {
+  max-width: 100%;
+}
+
+/* BIG FORMS */
+
+.a42-form-big_label,
+.a42-form-big p.label,
+.a42-form-big div > label:first-child {
+  display: block;
+  margin-bottom: .5em;
+  color: #0B1B34;
+  font-weight: bold;
+}
+
+@media screen and (min-width: 40em) {
+  .a42-form-big_label,
+  .a42-form-big p.label,
+  .a42-form-big div > label:first-child,
+  .a42-form-big *[type="submit"] {
+    font-family: 'GeoMed', Verdana, sans-serif;
+    font-weight: normal;
+  }
+
+  .a42-form-big_label,
+  .a42-form-big p.label,
+  .a42-form-big div > label:first-child {
+    font-size: 1.125em;
+  }
+}
+
+@media screen and (min-width: 50em) {
+  .a42-form-big_label,
+  .a42-form-big p.label,
+  .a42-form-big div > label:first-child {
+    font-size: 1.375rem;
+  }
+
+  .a42-form-big *[type="submit"] {
+    font-size: 1.375rem;
+    /* 22px */
+    border-width: .188rem;
+    /* 3px */
+    padding: calc(.5em - .188rem) calc(1em - .188rem);
+  }
+}
+
+@media screen and (min-width: 80em) {
+  .a42-form-big *[type="submit"] {
+    font-size: 1.563rem;
+    /* 25px */
+  }
+}
+
+/* ERROS */
+
+.a42-error-field {
+  border-color: #962E3F;
+}
+
+.a42-error-msg,
+.a42-required {
+  color: #962E3F;
+}
+
+.a42-error-msg {
+  display: block;
+}
+
+p.a42-required {
+  font-weight: bold;
+}
+
+input[aria-invalid="true"],
+select[aria-invalid="true"] {
+  border-color: #962E3F;
+}
+
+label sub {
+  bottom: 0;
+}
+
+/**
+ * -------------------------
+ * -------------------------
+ * @section MODAL WINDOW
+ * -------------------------
+ * -------------------------
+ */
+
+.a42-modal {
+  display: none;
+  position: fixed;
+  z-index: 600;
+  background-color: #fff;
+  padding: 1.25rem;
+  margin: 0;
+}
+
+.a42-modal .col-1-2 {
+  float: left;
+  width: 48%;
+}
+
+.a42-modal .col-1-2:nth-child(odd) {
+  clear: left;
+}
+
+.a42-modal .col-1-2:nth-child(even) {
+  float: right;
+}
+
+@media screen and (max-width: 29.9em) {
+  .a42-modal .col-1-2,
+  .a42-modal .col-1-2:nth-child(even) {
+    float: none;
+  }
+
+  .a42-modal .col-1-2 {
+    width: auto;
+  }
+
+  .a42-modal .col-1-2:nth-child(odd) {
+    clear: none;
+  }
+}
+
+.a42-modal .col-1-2,
+.a42-modal fieldset,
+.a42-modal legend {
+  text-align: left;
+}
+
+.a42-modal fieldset {
+  position: relative;
+  margin: .5em 0;
+  padding: .5em 0 .5em .5em;
+  border: 1px solid #CEDAE6;
+}
+
+.a42-modal legend {
+  position: relative;
+  left: -.2em;
+  margin-bottom: 0;
+  padding: 0 .2em;
+  font-weight: bold;
+  background-color: #fff;
+  color: #962E3F;
+}
+
+body.a42-ac-inv-contrast .a42-modal legend {
+  color: inherit;
+  background-color: inherit;
+}
+
+.a42-modal input,
+.a42-modal label {
+  float: left;
+  font-size: .9em;
+}
+
+.a42-modal input {
+  position: relative;
+  top: .4em;
+}
+
+.a42-modal label {
+  padding-top: .2em;
+  padding-bottom: .2em;
+}
+
+@media screen and (max-width: 19.9em) {
+  .a42-modal input,
+  .a42-modal label {
+    float: left;
+    display: block;
+  }
+
+  .a42-modal input {
+    clear: left;
+  }
+}
+
+.a42-modal input {
+  margin-right: .3em;
+}
+
+.a42-modal label {
+  margin-right: .75em;
+}
+
+.a42-modal_close {
+  position: absolute;
+  top: 1.4rem;
+  right: 1.25rem;
+  border: 1px solid #962E3F;
+  background-color: #962E3F;
+  color: #fff;
+  font-size: .8em;
+}
+
+/* Eww… I hate id selectors! :(( */
+
+#modal-title {
+  padding-right: 5rem;
+}
+
+@media screen and (min-width: 50em) {
+  .a42-modal {
+    width: 40em;
+    left: 50%;
+    margin-left: -20em;
+    top: 7%;
+    box-shadow: 0 0 5px #aaa;
+    border: 1px solid #fff;
+  }
+}
+
+@media screen and (max-width: 39.9em) {
+  .a42-modal {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+}
+
+/**
+ * -------------------------
+ * -------------------------
+ * @section TOGGLE BOX
+ *
+ * Warning: in case of update of the following styles, please update patch.css on screen-reader-html-test project.
+ * -------------------------
+ * -------------------------
+ */
+
+.a42-toggle + .a42-toggle {
+  margin-top: 3em;
+}
+
+.a42-toggle-button,
+summary {
+  background: #CEDAE6;
+  padding: .5em 1em;
+  font-size: 1rem;
+  text-align: left;
+}
+
+.a42-ac-high-contrast .a42-toggle-button {
+  border: 1px solid #fff !important;
+}
+
+.a42-ac-inv-contrast .a42-toggle-button {
+  border: 1px solid #FF0 !important;
+}
+
+.a42-toggle-button-full {
+  width: 100%;
+}
+
+.a42-toggle-button::after,
+summary::after {
+  content: "+";
+  float: left;
+  width: 1rem;
+  margin-right: .5rem;
+  font-weight: bold;
+  speak: none;
+}
+
+.a42-toggle-button[aria-expanded="true"]::after,
+.is-active .a42-toggle-button::after,
+details[open] summary::after {
+  content: "- ";
+  speak: none;
+}
+
+.a42-toggle-button:focus,
+.a42-toggle-button:hover,
+.a42-toggle-button:active,
+summary:focus,
+summary:hover {
+  background: #0B1B34;
+  color: #fff;
+}
+
+summary:hover {
+  cursor: pointer;
+}
+
+.a42-toggle-content {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.a42-toggle-content > *:first-child {
+  margin-top: 0;
+}
+
+/** Mobile toggle: the toggle is active on mobile only. **/
+
+@media screen and (max-width: 61.24em) {
+  .a42-toggle-mobile .a42-toggle-content {
+    background-color: #f9fcff;
+  }
+}
+
+@media screen and (min-width: 61.25em) {
+  /* Force display on desktop */
+
+  .a42-toggle-mobile .is-closed {
+    display: block;
+  }
+
+  .a42-toggle-mobile .a42-toggle-content {
+    padding-top: 0;
+  }
+}
+
+/* 
+ * Hide the summary arrow (for now, only possible in WebKit) 
+ * @link https://www.alsacreations.com/article/lire/1335-html5-details-summary.html
+*/
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+details[open] summary::-webkit-details-marker {
+  display: none;
+}
+
+/**
+ * -------------------------
+ * -------------------------
+ * @section CUSTOM STYLES
+ * -------------------------
+ * -------------------------
+ */
+
+/* HIDE STUFF */
+
+.is-hidden {
+  display: none;
+}
+
+@media screen and (max-width: 19.9em) {
+  .a42-hide-xsmall {
+    display: none;
+  }
+}
+
+/* TABLE OF CONTENTS */
+
+.a42-toc a{display:block;}
+
+@media screen and (max-width: 61.24em) {
+  .a42-toc-container .a42-title-epsilon {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 61.25em) {
+  .a42-toc-container .a42-toggle-button {
+    display: none;
+  }
+
+  /* Dirty hack */
+
+  /* Cf. https://gitlab.com/a42dev/AccessConfig-page/issues/91#note_158004803 */
+
+  /*.a42-page-sidebar.is-affixed .a42-toc-container{
+			position: static !important;
+			background-color: red;
+		}*/
+}
+
+.a42-toc-container {
+  padding: 1rem; 
+}
+
+.a42-toc,
+ul.a42-toc,
+ol.a42-toc {
+  background:#fff;
+  list-style: none;
+  padding:2em;
+}
+
+.a42-toc * ul,
+.a42-toc * ol,
+ul.a42-toc ul,
+ol.a42-toc ul,
+ul.a42-toc ol,
+ol.a42-toc ol {
+  padding-left: 2.5rem;
+}
+
+.a42-toc li ul,
+.a42-toc li ol {
+  margin-bottom: 1.5em;
+}
+
+.a42-toc li {
+  list-style: none;
+}
+
+.a42-toc li li {
+  font-size: 0.875em;
+  line-height: 1.714em;
+  margin-bottom: 1.714em;
+}
+
+@media screen and (max-height: 49.99em) {
+  .a42-toc ul,
+  .a42-toc ol {
+    margin-top: .75em;
+  }
+
+  .a42-toc li,
+  .a42-toc li li {
+    margin-bottom: .75em;
+  }
+}
+
+ul.a42-toc li li,
+.a42-toc ul li li {
+  position: relative;
+}
+
+ul.a42-toc li li::before,
+.a42-toc ul li li::before {
+  content: '';
+  position: absolute;
+  top: .7rem;
+  left: -1.063rem;
+  display: block;
+  background-color: #962E3F;
+  width: .25rem;
+  height: .125rem;
+}
+
+.a42-ac-high-contrast ul.a42-toc li li::before,
+.a42-ac-high-contrast .a42-toc ul li li::before {
+  background-color: #fff;
+}
+
+.a42-ac-inv-contrast ul.a42-toc li li::before,
+.a42-ac-inv-contrast .a42-toc ul li li::before {
+  background-color: #FF0;
+}
+
+.a42-toc a {
+  font-weight: bold;
+  border-bottom-color: transparent;
+}
+
+.a42-toc a:focus,
+.a42-toc a:hover,
+.a42-toc a:active {
+  border-bottom-color: inherit;
+}
+
+/* FIXED SIDEBAR */
+
+@media screen and (max-width: 61.24em) {
+  .is-affixed .a42-toc-container {
+    /*height: 100%;
+			overflow: auto;*/
+    /**/
+    padding-top: .625em;
+    /* 10px */
+    padding-bottom: .625em;
+    /* 10px */
+    background-color: #f9fcff;
+  }
+}
+
+@media screen and (min-height: 50em) {
+  .is-affixed h5,
+  .is-affixed .a42-title-epsilon {
+    padding-top: .960em;
+    /* 24px */
+  }
+}
+
+@media screen and (max-height: 49.99em) {
+  .a42-page-sidebar h5,
+  .a42-page-sidebar .a42-title-epsilon {
+    margin-bottom: .480em;
+    /* 12px */
+  }
+
+  .is-affixed h5,
+  .is-affixed .a42-title-epsilon {
+    padding-top: .480em;
+    /* 12px */
+  }
+}
+
+/* HERO BLOCK */
+
+/* Ajout depuis AccessConfig – 02/01/2019 */
+
+/* @todo à merger avec les styles du site formation */
+
+.a42-b-hero_more {
+  margin-top: 2em;
+  margin-bottom: 2em;
+  padding-bottom: .75em;
+  text-align: center;
+  /**/
+  list-style: none;
+  padding: 0;
+}
+
+@media screen and (min-width: 50em) {
+  .a42-b-hero_more {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+
+  .a42-b-hero_btn {
+    max-width: none;
+  }
+
+  .a42-b-hero_btn:nth-child(odd) {
+    padding-right: .625em;
+  }
+
+  .a42-b-hero_btn:nth-child(even) {
+    padding-left: .625em;
+  }
+
+  .a42-b-hero_btn--internal {
+    -ms-flex-preferred-size: 21.875rem;
+    flex-basis: 21.875rem;
+    margin-bottom: 0;
+  }
+
+  .a42-b-hero_btn--internal > * {
+    display: block;
+    min-width: 0;
+  }
+}
+
+@media screen and (min-width: 50em) and (max-width: 61.24em) {
+  .a42-b-hero_btn--internal > * {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+/* Ajout depuis AccessConfig – 02/01/2020 */
+
+@media screen and (min-width: 20em) {
+  .a42-b-hero_btn--internal span {
+    display: block;
+    font-size: 0.857em;
+  }
+}
+
+.a42-b-hero_btn--external {
+  margin-top: .75em;
+}
+
+/* FANCY BLOCK */
+
+/* Ajout depuis AccessConfig – 02/01/2019 */
+
+/* @todo à merger avec les styles du site formation */
+
+.a42-fancy {
+  position: relative;
+  margin-top: 4.5em;
+  margin-bottom: 3em;
+}
+
+.a42-fancy:last-child {
+  margin-bottom: 0;
+}
+
+.a42-fancy::before,
+.a42-fancy::after {
+  content: '';
+  position: absolute;
+  background-color: inherit;
+  display: block;
+  width: 100%;
+  height: 2.25em;
+  z-index: 0;
+}
+
+.a42-fancy::before {
+  top: -0.75em;
+  transform: skew(0deg, 0.5deg);
+}
+
+.a42-fancy::after {
+  bottom: -0.75em;
+  transform: skew(0deg, -0.5deg);
+}
+
+.a42-fancy--r::before {
+  transform: skew(0deg, -0.4deg);
+}
+
+.a42-fancy--r::after {
+  transform: skew(0deg, 0.7deg);
+}
+
+.a42-fancy--lr::after {
+  transform: skew(0deg, 0.5deg);
+}
+
+.a42-fancy--rl::before {
+  transform: skew(0deg, -0.5deg);
+}
+
+.a42-fancy--dry {
+  margin-bottom: 0;
+}
+
+.a42-fancy--dry::after {
+  display: none;
+}
+
+.a42-fancy--dry-t {
+  margin-top: 0;
+}
+
+.a42-fancy--dry-t::before {
+  display: none;
+}
+
+/* very annoying! */
+
+.a42-fancy + *:not(.a42-fancy):not(.a42-main-footer) {
+  margin-top: -3em;
+  padding-top: 3em;
+  padding-bottom: 3em;
+}
+
+/* note @mguillaumet cancel this – use it as patch in the projects which need it. */
+
+/*.a42-fancy + *:not(.a42-fancy):not(.a42-main-footer) + .a42-fancy {
+	margin-top: 0;
+}*/
+
+/**/
+
+.a42-fancy + .a42-fancy {
+  margin-top: -1.5em;
+}
+
+.a42-fancy + .a42-fancy::before {
+  top: -1.5em;
+}
+
+.a42-fancy-last {
+  position: relative;
+  z-index: 2;
+  margin-bottom: 0;
+}
+
+.a42-fancy-last .a42-contrib {
+  max-width: 50rem;
+}
+
+.a42-fancy-last::after {
+  display: none;
+}
+
+.a42-fancy-last + .a42-main-footer {
+  margin-top: 0;
+}
+
+.a42-fancy-last > .a42-container {
+  padding-bottom: 4.5em;
+}
+
+@media screen and (min-width: 61.25em) {
+  .a42-fancy-last > .a42-container {
+    padding-bottom: 6em;
+  }
+}
+
+@media screen and (min-width: 80em) {
+  .a42-fancy-last > .a42-container {
+    padding-bottom: 7em;
+  }
+}
+
+/**
+ * -----------------------------
+ * -----------------------------
+ * @section ACCESSCONFIG CUSTOM
+ * -----------------------------
+ * -----------------------------
+ */
+
+.a42-ac-cancel-justification .a42-main-intro,
+.a42-ac-cancel-justification .a42-main-intro *,
+.a42-ac-cancel-justification .a42-user-choices,
+.a42-ac-cancel-justification .a42-user-choices *,
+.a42-ac-cancel-justification .a42-main-footer,
+.a42-ac-cancel-justification .a42-main-footer * {
+  text-align: center !important;
+}
+
+/**
+ * ---------------------------
+ * ---------------------------
+ * @section MOTION SENSITIVITY
+ * ---------------------------
+ * ---------------------------
+ */
+
+@media screen and (prefers-reduced-motion: reduce) {
+  body {
+    scroll-behavior: auto !important;
+  }
+
+  *,
+  *::before,
+  *::after {
+    transition: none !important;
+  }
+}
+
+/*
+TOOLS
+
+These styles are for tools page (such as AccessConfig, etc.).
+
+Index
+======
+- GENERIC STYLE
+- TYPO
+- LAYOUT
+- HEADER
+- CONTENT
+- FORMS
+- MODAL WINDOW
+- TOGGLE BOX
+*/
+
+/**
+ * -----------------------------
+ * -----------------------------
+ * @section GENERIC TOOLS STYLES
+ * -----------------------------
+ * -----------------------------
+ */
+
+/**
+ * -------------------------
+ * -------------------------
+ * @section TOOLS HEADER
+ * -------------------------
+ * -------------------------
+ */
+
+.a42-as-tools .a42-main-intro .a42-picto-container {
+  display: block;
+}
+
+ /** Home link **/
+ .a42-as-tools .a42-main-intro .a42-picto-container {
+  display: block;
+}
+
+.a42-home-link {
+  display: block;
+  width: 2.5rem;
+}
+
+.a42-home-link:focus,
+.a42-home-link:hover {
+  color: #31486e;
+}
+
+
+/*dialog*/
+.hidden {
+  display: none;
+}
+
+.dialog-backdrop{background:rgba(255,255,255,0.8);}
+
+[role="alertdialog"],
+[role="dialog"],
+.default_dialog {
+  box-sizing: border-box;
+  padding: 15px;
+  border: 1px solid #000;
+  background-color: #fff;
+  min-height: 100vh;
+}
+
+@media screen and (min-width: 640px) {
+  [role="alertdialog"],
+  [role="dialog"],
+  .default_dialog {
+    position: absolute;
+    top: 2rem;
+    left: 50vw;  /* move to the middle of the screen (assumes relative parent is the body/viewport) */
+    transform: translateX(-50%);  /* move backwards 50% of this element's width */
+    min-width: calc(640px - (15px * 2));  /* == breakpoint - left+right margin */
+    min-height: auto;
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.12), 0 15px 12px rgba(0, 0, 0, 0.22);
+
+  }
+}
+
+.dialog_label {
+  text-align: center;
+}
+
+.dialog_form {
+  margin: 15px;
+}
+
+.dialog_form .label_text {
+  box-sizing: border-box;
+  padding-right: 0.5em;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+  width: 30%;
+  text-align: right;
+}
+
+.dialog_form .label_info {
+  box-sizing: border-box;
+  padding-right: 0.5em;
+  font-size: 12px;
+  width: 30%;
+  text-align: right;
+  display: inline-block;
+}
+
+.dialog_form_item {
+  margin: 10px 0;
+  font-size: 0;
+}
+
+.dialog_form_item .wide_input {
+  box-sizing: border-box;
+  max-width: 70%;
+  width: 27em;
+}
+
+.dialog_form_item .city_input {
+  box-sizing: border-box;
+  max-width: 70%;
+  width: 17em;
+}
+
+.dialog_form_item .state_input {
+  box-sizing: border-box;
+  max-width: 70%;
+  width: 15em;
+}
+
+.dialog_form_item .zip_input {
+  box-sizing: border-box;
+  max-width: 70%;
+  width: 9em;
+}
+
+.dialog_form_actions {
+  text-align: right;
+  padding: 0 20px 20px;
+}
+
+.dialog_close_button {
+  float: right;
+  position: absolute;
+  top: 10px;
+  left: 92%;
+  height: 25px;
+}
+
+.dialog_close_button img {
+  border: 0;
+}
+
+.dialog_desc {
+  padding: 10px 20px;
+}
+
+/* native <dialog> element uses the ::backdrop pseudo-element */
+
+/* dialog::backdrop, */
+.dialog-backdrop {
+  display: none;
+  position: fixed;
+  overflow-y: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;z-index: 999;
+}
+
+@media screen and (min-width: 640px) {
+  .dialog-backdrop {
+    background: rgba(0, 0, 0, 0.3);
+  }
+}
+
+.dialog-backdrop.active {
+  display: block;
+}
+
+.no-scroll {
+  overflow-y: auto !important;
+}
+
+/* this is added to the body when a dialog is open */
+.has-dialog {
+  overflow: hidden;
+}
+
+/* styling for alert-dialog example */
+.notes {
+  display: block;
+  font-size: 1rem;
+  line-height: 1.3;
+  min-width: 400px;
+  max-width: 100%;
+  width: 33%;
+}
+
+.toast {
+  background-color: rgba(0, 0, 0, 0.9);
+  color: #fff;
+  padding: 1rem;
+  border: none;
+  border-radius: 0.25rem;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  transform: translateY(-150%);
+  transition: transform 225ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.toast.active {
+  transform: translateY(0);
+}
+
+
+.close-btn::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    display: block;
+    margin-left: -.75rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    background: url(data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjI0IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSIyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJtMjQgNC4yLTQuMS00LjFoLS4xbC03LjggNy43LTcuOC03LjhoLS4xbC00LjEgNC4xIDcuOSA3LjktNy45IDcuOCA0LjEgNC4yaC4xbDcuOC03LjggNy44IDcuN2MwIC4xIDAgLjEuMSAwbDQuMS00LjEtNy44LTcuOHoiIGZpbGw9IiMzMTQ4NmUiLz48L3N2Zz4=) no-repeat 50% 50%;
+}   
+
+.close-btn {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    cursor: pointer;
+    border: 0;
+}
+
+
+.dialog-title{
+margin: 0 3rem 0 0;  
+}
+
+.share-block{
+  text-align:right;
+}
+
+.share-btn svg,
+.menu-btn svg{
+  width:30px;
+  float:left;
+  padding-right:10px;
+}
+
+.share-btn{font-size:1em;}
+
+.a42-help{
+ display: inline-block;
+ width:60%;
+}
+
+.a42-language{
+ display: inline-block;
+ width:38%;
+  float:right;
+}
+
+.a42-language a {
+  width:30px;
+  margin-right:5px;
+  float:right;
+}
+
+
+.a42-language a img{
+  width:100%;
+}
+.a42-language .current a{position:relative;display:block}
+.a42-language .current a:after{
+  content:"▲";
+  position:absolute;
+  right:20%;
+}
+.a42-search{padding:1em 0 1.5em 1.5em;}
+.a42-search label{display:block;font-weight:bold;}
+.a42-search input{width:70%;padding:17px}
+
+.a42-resultats-tableau{padding:2em;position:relative;}
+
+#results-search{
+  font-weigh:bold;
+  font-size:1.5em;
+  position:absolute;
+  right:25px;
+  top:40px;
+}
+
+#btn-resultats{padding:1em;}
+
+/**
+ * -----------------------------
+ * -----------------------------
+ * @section ACCESSCONFIG BOUTON CUSTOM
+ * -----------------------------
+ * -----------------------------
+ */
+#accessconfig {
+  position: absolute;
+  top: 14px;
+  left: .625em;
+  z-index: 3;
+}
+
+#accessconfig button{
+  padding: 6px;
+  border: 1px solid #0B1B34;
+  border-radius: 5px;
+}
+
+/**
+ Breakpoint pour la lisibilité responsive
+ */
+@media screen and (max-width: 50em) {
+  .a42-container{
+    max-width: 100%;
+  }
+}
+
+.a42-bgcolor-success{
+  background-color: lightgreen;
+}
+
+#msg-success{
+  padding: 1em;
+}
